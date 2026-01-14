@@ -14,7 +14,14 @@
       "description": "个人 Claude Skills 集合",
       "source": "./",
       "strict": false,
-      "skills": ["./skills/ui-ux-pro-max", "./skills/xlsx"]
+      "skills": [
+        "./skills/ui-ux-pro-max",
+        "./skills/xlsx",
+        "./skills/ceo-advisor",
+        "./skills/cto-advisor",
+        "./skills/content-creator",
+        "./skills/content-research-writer"
+      ]
     }
   ]
 }

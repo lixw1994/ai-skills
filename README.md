@@ -6,10 +6,14 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 
 ## Skills
 
-| Skill                                       | Description                  | Key Features                                                  |
-| ------------------------------------------- | ---------------------------- | ------------------------------------------------------------- |
-| **[ui-ux-pro-max](./skills/ui-ux-pro-max)** | UI/UX Design Intelligence    | 50 styles, 21 color palettes, 50 font pairings, 9 tech stacks |
-| **[xlsx](./skills/xlsx)**                   | Excel Spreadsheet Processing | Create, edit, analyze, formulas, data visualization           |
+| Skill                                                             | Description                    | Key Features                                                           |
+| ----------------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------- |
+| **[ui-ux-pro-max](./skills/ui-ux-pro-max)**                       | UI/UX Design Intelligence      | 50 styles, 21 color palettes, 50 font pairings, 9 tech stacks          |
+| **[xlsx](./skills/xlsx)**                                         | Excel Spreadsheet Processing   | Create, edit, analyze, formulas, data visualization                    |
+| **[ceo-advisor](./skills/ceo-advisor)**                           | CEO Executive Leadership       | Strategy analyzer, financial modeling, board governance, investor relations |
+| **[cto-advisor](./skills/cto-advisor)**                           | CTO Technical Leadership       | Tech debt analyzer, team scaling, DORA metrics, ADR templates          |
+| **[content-creator](./skills/content-creator)**                   | Content Marketing              | Brand voice analyzer, SEO optimizer, content frameworks, social templates |
+| **[content-research-writer](./skills/content-research-writer)**   | Content Research & Writing     | Research, citations, hooks, outlines, section feedback                 |
 
 ## Quick Start
 
