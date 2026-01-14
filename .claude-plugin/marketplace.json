@@ -1,0 +1,20 @@
+{
+  "name": "lixianwei-ai-skills",
+  "owner": {
+    "name": "lixianwei",
+    "email": "lixianwei1994@gmail.com"
+  },
+  "metadata": {
+    "description": "个人 Claude Skills 集合",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ai-skills",
+      "description": "个人 Claude Skills 集合",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/ui-ux-pro-max", "./skills/xlsx"]
+    }
+  ]
+}
