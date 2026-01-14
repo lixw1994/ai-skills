@@ -10,18 +10,46 @@
   },
   "plugins": [
     {
-      "name": "ai-skills",
-      "description": "个人 Claude Skills 集合",
-      "source": "./",
+      "name": "ui-ux-pro-max",
+      "description": "UI/UX Design Intelligence",
+      "source": "./skills/ui-ux-pro-max",
       "strict": false,
-      "skills": [
-        "./skills/ui-ux-pro-max",
-        "./skills/xlsx",
-        "./skills/ceo-advisor",
-        "./skills/cto-advisor",
-        "./skills/content-creator",
-        "./skills/content-research-writer"
-      ]
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "xlsx",
+      "description": "Excel Spreadsheet Processing",
+      "source": "./skills/xlsx",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "ceo-advisor",
+      "description": "CEO Executive Leadership",
+      "source": "./skills/ceo-advisor",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "cto-advisor",
+      "description": "CTO Technical Leadership",
+      "source": "./skills/cto-advisor",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "content-creator",
+      "description": "Content Marketing",
+      "source": "./skills/content-creator",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "content-research-writer",
+      "description": "Content Research & Writing",
+      "source": "./skills/content-research-writer",
+      "strict": false,
+      "skills": ["./SKILL.md"]
     }
   ]
 }

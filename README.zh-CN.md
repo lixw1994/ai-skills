@@ -6,10 +6,14 @@
 
 ## Skills 列表
 
-| Skill                                       | 描述               | 关键能力                                                    |
-| ------------------------------------------- | ------------------ | ----------------------------------------------------------- |
-| **[ui-ux-pro-max](./skills/ui-ux-pro-max)** | UI/UX 设计智能助手 | 50 种设计风格、21 套配色方案、50 组字体搭配、9 种技术栈支持 |
-| **[xlsx](./skills/xlsx)**                   | Excel 电子表格处理 | 创建、编辑、分析、公式计算、数据可视化                      |
+| Skill                                                             | 描述               | 关键能力                                                       |
+| ----------------------------------------------------------------- | ------------------ | -------------------------------------------------------------- |
+| **[ui-ux-pro-max](./skills/ui-ux-pro-max)**                       | UI/UX 设计智能助手 | 50 种设计风格、21 套配色方案、50 组字体搭配、9 种技术栈支持    |
+| **[xlsx](./skills/xlsx)**                                         | Excel 电子表格处理 | 创建、编辑、分析、公式计算、数据可视化                         |
+| **[ceo-advisor](./skills/ceo-advisor)**                           | CEO 执行领导力     | 战略分析器、财务建模、董事会治理、投资者关系                   |
+| **[cto-advisor](./skills/cto-advisor)**                           | CTO 技术领导力     | 技术债务分析、团队扩展、DORA 指标、ADR 模板                    |
+| **[content-creator](./skills/content-creator)**                   | 内容营销           | 品牌声音分析、SEO 优化、内容框架、社交媒体模板                 |
+| **[content-research-writer](./skills/content-research-writer)**   | 内容研究与写作     | 研究、引用、开头优化、大纲、章节反馈                           |
 
 ## 快速开始
 
@@ -44,7 +48,11 @@ ai-skills/
 │   └── marketplace.json   # Marketplace 配置文件
 ├── skills/                # Skills 集合
 │   ├── ui-ux-pro-max/     # UI/UX 设计智能
-│   └── xlsx/              # Excel 处理
+│   ├── xlsx/              # Excel 处理
+│   ├── ceo-advisor/       # CEO 执行领导力
+│   ├── cto-advisor/       # CTO 技术领导力
+│   ├── content-creator/   # 内容营销
+│   └── content-research-writer/  # 内容研究与写作
 ├── template/              # Skill 模板
 └── spec/                  # Agent Skills 规范
 ```
