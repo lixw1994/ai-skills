@@ -14,6 +14,9 @@
 | **[cto-advisor](./skills/cto-advisor)**                           | CTO 技术领导力     | 技术债务分析、团队扩展、DORA 指标、ADR 模板                    |
 | **[content-creator](./skills/content-creator)**                   | 内容营销           | 品牌声音分析、SEO 优化、内容框架、社交媒体模板                 |
 | **[content-research-writer](./skills/content-research-writer)**   | 内容研究与写作     | 研究、引用、开头优化、大纲、章节反馈                           |
+| **[git-guardrails-claude-code](./skills/git-guardrails-claude-code)** | Git 安全防护   | 拦截危险 git 命令（push、reset --hard、clean、branch -D）      |
+| **[ubiquitous-language](./skills/ubiquitous-language)**           | DDD 统一语言       | 提取术语表、标记歧义、提出规范术语                             |
+| **[write-a-prd](./skills/write-a-prd)**                         | PRD 编写器         | 用户访谈、代码库探索、模块设计、提交 GitHub Issue              |
 
 ## 快速开始
 
@@ -52,7 +55,10 @@ ai-skills/
 │   ├── ceo-advisor/       # CEO 执行领导力
 │   ├── cto-advisor/       # CTO 技术领导力
 │   ├── content-creator/   # 内容营销
-│   └── content-research-writer/  # 内容研究与写作
+│   ├── content-research-writer/  # 内容研究与写作
+│   ├── git-guardrails-claude-code/  # Git 安全防护
+│   ├── ubiquitous-language/     # DDD 统一语言
+│   └── write-a-prd/             # PRD 编写器
 ├── template/              # Skill 模板
 └── spec/                  # Agent Skills 规范
 ```

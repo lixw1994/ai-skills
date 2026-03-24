@@ -14,6 +14,9 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[cto-advisor](./skills/cto-advisor)**                           | CTO Technical Leadership       | Tech debt analyzer, team scaling, DORA metrics, ADR templates          |
 | **[content-creator](./skills/content-creator)**                   | Content Marketing              | Brand voice analyzer, SEO optimizer, content frameworks, social templates |
 | **[content-research-writer](./skills/content-research-writer)**   | Content Research & Writing     | Research, citations, hooks, outlines, section feedback                 |
+| **[git-guardrails-claude-code](./skills/git-guardrails-claude-code)** | Git Safety Guardrails    | Block dangerous git commands (push, reset --hard, clean, branch -D)   |
+| **[ubiquitous-language](./skills/ubiquitous-language)**           | DDD Ubiquitous Language        | Extract glossary, flag ambiguities, propose canonical terms            |
+| **[write-a-prd](./skills/write-a-prd)**                         | PRD Writer                     | User interview, codebase exploration, module design, GitHub issue      |
 
 ## Quick Start
 

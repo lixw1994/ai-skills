@@ -50,6 +50,27 @@
       "source": "./skills/content-research-writer",
       "strict": false,
       "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "git-guardrails-claude-code",
+      "description": "Set up Claude Code hooks to block dangerous git commands before they execute",
+      "source": "./skills/git-guardrails-claude-code",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "ubiquitous-language",
+      "description": "Extract a DDD-style ubiquitous language glossary from conversation",
+      "source": "./skills/ubiquitous-language",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "write-a-prd",
+      "description": "Create a PRD through user interview, codebase exploration, and module design",
+      "source": "./skills/write-a-prd",
+      "strict": false,
+      "skills": ["./SKILL.md"]
     }
   ]
 }
