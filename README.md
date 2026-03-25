@@ -16,8 +16,9 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[content-research-writer](./skills/content-research-writer)**   | Content Research & Writing     | Research, citations, hooks, outlines, section feedback                 |
 | **[git-guardrails-claude-code](./skills/git-guardrails-claude-code)** | Git Safety Guardrails    | Block dangerous git commands (push, reset --hard, clean, branch -D)   |
 | **[ubiquitous-language](./skills/ubiquitous-language)**           | DDD Ubiquitous Language        | Extract glossary, flag ambiguities, propose canonical terms            |
-| **[write-a-prd](./skills/write-a-prd)**                         | PRD Writer                     | User interview, codebase exploration, module design, GitHub issue      |
+| **[write-a-prd](./skills/write-a-prd)**                         | PRD Writer                     | User interview, codebase exploration, module design, local prd/ output |
 | **[gh-pr-code-review](./skills/gh-pr-code-review)**             | GitHub PR Code Review          | Interactive setup, batch parallel review, custom rules, test scope suggestions |
+| **[test-driven-development](./skills/test-driven-development)** | Test-Driven Development        | Red-Green-Refactor cycle, failing test first, minimal code, anti-patterns guide |
 
 ## Quick Start
 

@@ -16,8 +16,9 @@
 | **[content-research-writer](./skills/content-research-writer)**   | 内容研究与写作     | 研究、引用、开头优化、大纲、章节反馈                           |
 | **[git-guardrails-claude-code](./skills/git-guardrails-claude-code)** | Git 安全防护   | 拦截危险 git 命令（push、reset --hard、clean、branch -D）      |
 | **[ubiquitous-language](./skills/ubiquitous-language)**           | DDD 统一语言       | 提取术语表、标记歧义、提出规范术语                             |
-| **[write-a-prd](./skills/write-a-prd)**                         | PRD 编写器         | 用户访谈、代码库探索、模块设计、提交 GitHub Issue              |
+| **[write-a-prd](./skills/write-a-prd)**                         | PRD 编写器         | 用户访谈、代码库探索、模块设计、本地 prd/ 目录输出             |
 | **[gh-pr-code-review](./skills/gh-pr-code-review)**             | GitHub PR 代码评审 | 交互式配置、批量并行审查、自定义规则、测试范围建议             |
+| **[test-driven-development](./skills/test-driven-development)** | 测试驱动开发       | 红-绿-重构循环、先写失败测试、最小化代码、反模式指南           |
 
 ## 快速开始
 

@@ -67,7 +67,7 @@
     },
     {
       "name": "write-a-prd",
-      "description": "Create a PRD through user interview, codebase exploration, and module design",
+      "description": "Create a PRD through user interview, codebase exploration, and module design, saved locally",
       "source": "./skills/write-a-prd",
       "strict": false,
       "skills": ["./SKILL.md"]
@@ -76,6 +76,13 @@
       "name": "gh-pr-code-review",
       "description": "GitHub PR Code Review with project-specific customization via interactive setup",
       "source": "./skills/gh-pr-code-review",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "test-driven-development",
+      "description": "Use when implementing any feature or bugfix, before writing implementation code",
+      "source": "./skills/test-driven-development",
       "strict": false,
       "skills": ["./SKILL.md"]
     }
