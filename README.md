@@ -19,6 +19,8 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[write-a-prd](./skills/write-a-prd)**                         | PRD Writer                     | User interview, codebase exploration, module design, local prd/ output |
 | **[gh-pr-code-review](./skills/gh-pr-code-review)**             | GitHub PR Code Review          | Interactive setup, batch parallel review, custom rules, test scope suggestions |
 | **[test-driven-development](./skills/test-driven-development)** | Test-Driven Development        | Red-Green-Refactor cycle, failing test first, minimal code, anti-patterns guide |
+| **[brainstorming](./skills/brainstorming)**                     | Creative Brainstorming         | Intent exploration, requirements discovery, visual companion, spec review       |
+| **[write-a-skill](./skills/write-a-skill)**                     | Skill Authoring Guide          | TDD for skills, CSO optimization, pressure testing, anti-patterns              |
 
 ## Quick Start
 

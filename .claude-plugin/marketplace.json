@@ -85,6 +85,20 @@
       "source": "./skills/test-driven-development",
       "strict": false,
       "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "brainstorming",
+      "description": "Use before any creative work - creating features, building components, adding functionality, or modifying behavior",
+      "source": "./skills/brainstorming",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "write-a-skill",
+      "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
+      "source": "./skills/write-a-skill",
+      "strict": false,
+      "skills": ["./SKILL.md"]
     }
   ]
 }
