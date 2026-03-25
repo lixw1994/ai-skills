@@ -71,6 +71,13 @@
       "source": "./skills/write-a-prd",
       "strict": false,
       "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "gh-pr-code-review",
+      "description": "GitHub PR Code Review with project-specific customization via interactive setup",
+      "source": "./skills/gh-pr-code-review",
+      "strict": false,
+      "skills": ["./SKILL.md"]
     }
   ]
 }
