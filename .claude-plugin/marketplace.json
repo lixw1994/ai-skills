@@ -106,6 +106,13 @@
       "source": "./skills/youtube-transcript",
       "strict": false,
       "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "fal-image",
+      "description": "Generate images using fal.ai API with GPT Image 1/1.5 and Nano Banana 2 models",
+      "source": "./skills/fal-image",
+      "strict": false,
+      "skills": ["./SKILL.md"]
     }
   ]
 }

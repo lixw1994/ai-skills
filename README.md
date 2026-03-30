@@ -22,6 +22,7 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[brainstorming](./skills/brainstorming)**                     | Creative Brainstorming         | Intent exploration, requirements discovery, visual companion, spec review       |
 | **[write-a-skill](./skills/write-a-skill)**                     | Skill Authoring Guide          | TDD for skills, CSO optimization, pressure testing, anti-patterns              |
 | **[youtube-transcript](./skills/youtube-transcript)** | YouTube Transcript Downloader | Multi-language subtitles, translation, chapters, speaker identification        |
+| **[fal-image](./skills/fal-image)**                   | fal.ai Image Generator        | GPT Image 1/1.5, Nano Banana 2, text-to-image, local save                     |
 
 ## Quick Start
 
