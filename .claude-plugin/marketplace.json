@@ -157,72 +157,72 @@
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "paper",
+      "name": "ljg-paper",
       "description": "Paper reader for non-academics, extracts ideas from research papers for personal use",
-      "source": "./skills/paper",
+      "source": "./skills/ljg-paper",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "invest",
+      "name": "ljg-invest",
       "description": "Investment analysis report generator, evaluates whether a project is an order-creating machine",
-      "source": "./skills/invest",
+      "source": "./skills/ljg-invest",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "learn",
+      "name": "ljg-learn",
       "description": "Deep concept anatomist, deconstructs concepts through 8 exploration dimensions",
-      "source": "./skills/learn",
+      "source": "./skills/ljg-learn",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "relationship",
+      "name": "ljg-relationship",
       "description": "Relationship analyst combining structural diagnostics with psychoanalytic depth",
-      "source": "./skills/relationship",
+      "source": "./skills/ljg-relationship",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "roundtable",
+      "name": "ljg-roundtable",
       "description": "Structured roundtable discussion framework with multi-perspective dialectical debate",
-      "source": "./skills/roundtable",
+      "source": "./skills/ljg-roundtable",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "travel",
+      "name": "ljg-travel",
       "description": "Deep travel research for museums and ancient architecture, generates knowledge docs and reference cards",
-      "source": "./skills/travel",
+      "source": "./skills/ljg-travel",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "writes",
+      "name": "ljg-writes",
       "description": "Writing engine that develops ideas through the process of writing",
-      "source": "./skills/writes",
+      "source": "./skills/ljg-writes",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "card",
+      "name": "ljg-card",
       "description": "Content caster that transforms content into PNG visuals with 6 mold types",
-      "source": "./skills/card",
+      "source": "./skills/ljg-card",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "paper-flow",
+      "name": "ljg-paper-flow",
       "description": "Paper workflow: read papers and cast cards in one go",
-      "source": "./skills/paper-flow",
+      "source": "./skills/ljg-paper-flow",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "x-download",
+      "name": "ljg-x-download",
       "description": "Download images and videos from X (Twitter) posts",
-      "source": "./skills/x-download",
+      "source": "./skills/ljg-x-download",
       "strict": false,
       "skills": ["./SKILL.md"]
     }
