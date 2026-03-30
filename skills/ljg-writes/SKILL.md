@@ -9,10 +9,10 @@ description: "写作引擎。带着一个观点出发，在写的过程中把它
 
 ## 约束
 
-### Org-mode 语法
+### Markdown 语法
 
-- 加粗用 `*bold*`（单星号），禁止 `**bold**`
-- 标题层级从 `*` 开始，不跳级
+- 加粗用 `**bold**`（双星号）
+- 标题层级从 `#` 开始，不跳级
 
 ### ASCII Art
 
@@ -22,10 +22,10 @@ description: "写作引擎。带着一个观点出发，在写的过程中把它
 
 - 时间戳：`date +%Y%m%dT%H%M%S`
 - 可读时间：`date "+%Y-%m-%d %a %H:%M"`
-- 文件名：`{时间戳}--{标题关键词}__write.org`
+- 文件名：`{时间戳}--{标题关键词}__write.md`
 - 输出目录：`~/Documents/notes/`
 
-### Org 文件头
+### 文件头
 
 ```
 #+title:      {标题}
@@ -217,5 +217,5 @@ description: "写作引擎。带着一个观点出发，在写的过程中把它
 
 1. `date +%Y%m%dT%H%M%S` 和 `date "+%Y-%m-%d %a %H:%M"` 获取时间戳
 2. 从观点中提取关键词作为标题
-3. 写入 `~/Documents/notes/{时间戳}--{标题关键词}__write.org`
+3. 写入 `~/Documents/notes/{时间戳}--{标题关键词}__write.md`
 4. 报告路径

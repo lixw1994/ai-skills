@@ -1,11 +1,11 @@
 ---
 name: ljg-travel
-description: "Deep travel research workflow for museums and ancient architecture. Input a city name, auto-generates structured knowledge document (org-mode) + portable reference cards (PNG). Covers historical background, museum highlights, archaeological significance, and architectural heritage. Use when user says '旅行研究', '博物馆功课', '古建功课', 'travel research', '出发前功课', or provides a city name with intent to do deep cultural travel preparation."
+description: "Deep travel research workflow for museums and ancient architecture. Input a city name, auto-generates structured knowledge document (Markdown) + portable reference cards (PNG). Covers historical background, museum highlights, archaeological significance, and architectural heritage. Use when user says '旅行研究', '博物馆功课', '古建功课', 'travel research', '出发前功课', or provides a city name with intent to do deep cultural travel preparation."
 ---
 
 # ljg-travel-flow: 旅行研究
 
-一条命令完成：全维度文化研究 → 内容提炼 → org 文档 + 便携卡片。
+一条命令完成：全维度文化研究 → 内容提炼 → Markdown 文档 + 便携卡片。
 
 方法论借鉴考古学 Desk-Based Assessment（DBA）：到达之前，穷尽一切文献证据。
 
@@ -86,13 +86,13 @@ description: "Deep travel research workflow for museums and ancient architecture
 
 收集所有成功提炼的内容摘要。
 
-### 4. 合成 org-mode 文档
+### 4. 合成 Markdown 文档
 
-将步骤 2（研究结果）和步骤 3（内容提炼，如有）合成为一份结构化 org-mode 文档。
+将步骤 2（研究结果）和步骤 3（内容提炼，如有）合成为一份结构化 Markdown 文档。
 
 **文档结构：**
 
-```org
+```
 #+title: {城市}旅行研究
 #+date: {当前日期}
 #+filetags: :travel:museum:architecture:
@@ -150,7 +150,7 @@ description: "Deep travel research workflow for museums and ancient architecture
 ```
 
 **文件命名**：使用 denote naming schema，保存到 `~/Documents/notes/` 目录：
-`{YYYYMMDDTHHMMSS}==z--{城市}旅行研究.org`
+`{YYYYMMDDTHHMMSS}==z--{城市}旅行研究.md`
 
 **写作要求**：
 - 每个推荐必须有「为什么看」和「看什么细节」，不许空泛
@@ -159,7 +159,7 @@ description: "Deep travel research workflow for museums and ancient architecture
 
 ### 5. 铸造便携卡片（ljg-card）
 
-从步骤 4 的 org 文档中提取核心内容，铸造两张卡片，**并行执行**：
+从步骤 4 的 Markdown 文档中提取核心内容，铸造两张卡片，**并行执行**：
 
 **卡片 A — 城市文明概览（信息图）：**
 
@@ -174,7 +174,7 @@ description: "Deep travel research workflow for museums and ancient architecture
 ```
 ════ 旅行研究完成 ═══════════════════════
 🏛️ 城市: {城市名}
-📝 知识文档: {org 文件路径}
+📝 知识文档: {Markdown 文件路径}
 🖼️ 文明概览卡: {PNG 文件路径}
 🖼️ 路线速查卡: {PNG 文件路径}
 📊 研究覆盖: {N}个博物馆 | {M}座古建 | {K}处考古遗址
@@ -186,7 +186,7 @@ description: "Deep travel research workflow for museums and ancient architecture
 - 步骤 2 是核心——12 个 Agent 并行覆盖学术研究和平台内容，一次完成
 - 步骤 3（内容提炼）是增强层，失败不阻塞流程
 - 步骤 5 的两张卡片之间并行
-- org 文档是主产出，卡片是衍生产出——文档质量优先
+- Markdown 文档是主产出，卡片是衍生产出——文档质量优先
 - 不产出泛泛的旅游攻略，每个推荐必须有「为什么看」和「看什么细节」
 - Research 搜索使用中英文双语关键词，扩大覆盖面
 - 没有确切信息时宁可留空，不编造

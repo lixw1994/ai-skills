@@ -91,12 +91,12 @@ Assistant: [Launches roundtable discussion on free will]
    - 生成**完整知识网络** ASCII 图：标出所有关键概念、立场、争议点及其关系
    - 列出**未解决的开放问题**（讨论中暴露但未穷尽的方向）
 
-7. **写入 org 文件**
-   将讨论全貌整合为 org-mode 格式并写入文件：
+7. **写入 Markdown 文件**
+   将讨论全貌整合为 Markdown 格式并写入文件：
    1. 运行 `date +%Y%m%dT%H%M%S` 获取时间戳
-   2. 写入 `~/Documents/notes/{timestamp}--圆桌-{议题关键词}__roundtable.org`
-   3. org 文件结构：
-      ```org
+   2. 写入 `~/Documents/notes/{timestamp}--圆桌-{议题关键词}__roundtable.md`
+   3. 文件结构：
+      ```
       #+title: 圆桌：{议题}
       #+date: [{日期}]
       #+filetags: :roundtable:

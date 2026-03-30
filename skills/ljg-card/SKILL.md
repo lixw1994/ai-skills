@@ -20,7 +20,7 @@ description: "Content caster (铸). Transforms content into PNG visuals. Six mol
 
 ## 约束
 
-本 skill 输出为视觉文件（PNG），不适用 L0 中的 Org-mode、Denote 和 ASCII-only 规范。
+本 skill 输出为视觉文件（PNG），不适用 L0 中的 Markdown、Denote 和 ASCII-only 规范。
 
 ## 共享基础
 
