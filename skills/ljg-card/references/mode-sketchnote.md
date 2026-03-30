@@ -236,5 +236,5 @@ v
 ## 步骤 6：截图
 
 ```bash
-node ~/.claude/skills/ljg-card/assets/capture.js /tmp/ljg_cast_sketchnote_{name}.html ~/Downloads/{name}.png 1080 800 fullpage
+node ~/.claude/skills/ljg-card/assets/capture.js /tmp/ljg_cast_sketchnote_{name}.html Notes/{name}.png 1080 800 fullpage
 ```

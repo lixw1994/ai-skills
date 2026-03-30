@@ -94,7 +94,7 @@ Assistant: [Launches roundtable discussion on free will]
 7. **写入 Markdown 文件**
    将讨论全貌整合为 Markdown 格式并写入文件：
    1. 运行 `date +%Y%m%dT%H%M%S` 获取时间戳
-   2. 写入 `~/Documents/notes/{timestamp}--圆桌-{议题关键词}__roundtable.md`
+   2. 写入 `Notes/{timestamp}--圆桌-{议题关键词}__roundtable.md`
    3. 文件结构：
       ```
       #+title: 圆桌：{议题}

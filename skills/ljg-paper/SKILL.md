@@ -20,14 +20,14 @@ description: "Paper reader for non-academics. Takes a paper and extracts its ide
 
 ### 模板权威性
 
-输出结构依据 `references/template.md`。禁止参考 `~/Documents/notes/` 中已有论文文件的章节结构——旧文件可能使用过期模板。
+输出结构依据 `references/template.md`。禁止参考 `Notes/` 中已有论文文件的章节结构——旧文件可能使用过期模板。
 
 ### Denote 文件规范
 
 - 时间戳：`date +%Y%m%dT%H%M%S`
 - 可读时间：`date "+%Y-%m-%d %a %H:%M"`
 - 文件名：`{时间戳}--paper-{简短标题}__paper.md`
-- 输出目录：`~/Documents/notes/`
+- 输出目录：`Notes/`
 
 ### 文件头
 
@@ -86,7 +86,7 @@ description: "Paper reader for non-academics. Takes a paper and extracts its ide
 
 确保拿到：标题、作者、摘要、核心方法、结果。
 
-如果论文有一张承载全文核心思路的总览图（overview / architecture diagram，通常是 Figure 1），提取并保存到 `~/Documents/notes/images/`，文件名 `{identifier}--paper-{简短标题}-overview.png`。
+如果论文有一张承载全文核心思路的总览图（overview / architecture diagram，通常是 Figure 1），提取并保存到 `Notes/images/`，文件名 `{identifier}--paper-{简短标题}-overview.png`。
 
 判断标准：这张图让人一看就抓住论文在做什么。不是所有论文都有——没有就跳过，不要硬找。
 
@@ -173,7 +173,7 @@ description: "Paper reader for non-academics. Takes a paper and extracts its ide
 
 ### 9. 生成 Markdown 文件
 
-按 Denote 规范获取时间戳，读 `references/template.md`，写入 `~/Documents/notes/`。
+按 Denote 规范获取时间戳，读 `references/template.md`，写入 `Notes/`。
 
 ## 验收
 

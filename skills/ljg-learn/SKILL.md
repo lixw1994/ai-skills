@@ -73,5 +73,5 @@ Assistant: [对"熵"进行八维解剖，生成 Markdown 报告]
 
 写入文件：
 1. 运行 `date +%Y%m%dT%H%M%S` 获取时间戳。
-2. 写入 `~/Documents/notes/{timestamp}--概念解剖-{概念名}__concept.md`。
+2. 写入 `Notes/{timestamp}--概念解剖-{概念名}__concept.md`。
 3. 报告路径，完成。

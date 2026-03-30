@@ -149,7 +149,7 @@ description: "Deep travel research workflow for museums and ancient architecture
    - {书名} — {为什么值得读}
 ```
 
-**文件命名**：使用 denote naming schema，保存到 `~/Documents/notes/` 目录：
+**文件命名**：使用 denote naming schema，保存到 `Notes/` 目录：
 `{YYYYMMDDTHHMMSS}==z--{城市}旅行研究.md`
 
 **写作要求**：
