@@ -155,6 +155,76 @@
       "source": "./skills/format-markdown",
       "strict": false,
       "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "paper",
+      "description": "Paper reader for non-academics, extracts ideas from research papers for personal use",
+      "source": "./skills/paper",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "invest",
+      "description": "Investment analysis report generator, evaluates whether a project is an order-creating machine",
+      "source": "./skills/invest",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "learn",
+      "description": "Deep concept anatomist, deconstructs concepts through 8 exploration dimensions",
+      "source": "./skills/learn",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "relationship",
+      "description": "Relationship analyst combining structural diagnostics with psychoanalytic depth",
+      "source": "./skills/relationship",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "roundtable",
+      "description": "Structured roundtable discussion framework with multi-perspective dialectical debate",
+      "source": "./skills/roundtable",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "travel",
+      "description": "Deep travel research for museums and ancient architecture, generates knowledge docs and reference cards",
+      "source": "./skills/travel",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "writes",
+      "description": "Writing engine that develops ideas through the process of writing",
+      "source": "./skills/writes",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "card",
+      "description": "Content caster that transforms content into PNG visuals with 6 mold types",
+      "source": "./skills/card",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "paper-flow",
+      "description": "Paper workflow: read papers and cast cards in one go",
+      "source": "./skills/paper-flow",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "x-download",
+      "description": "Download images and videos from X (Twitter) posts",
+      "source": "./skills/x-download",
+      "strict": false,
+      "skills": ["./SKILL.md"]
     }
   ]
 }

@@ -29,6 +29,16 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[cover-image](./skills/cover-image)**               | Cover Image Generator          | 5-dimension customization, 10 palettes, 7 rendering styles                    |
 | **[translate](./skills/translate)**                   | Document Translator            | Quick/normal/refined modes, custom glossaries, terminology consistency          |
 | **[format-markdown](./skills/format-markdown)**       | Markdown Formatter             | Frontmatter, headings, bold, lists, code blocks, formatted output              |
+| **[paper](./skills/paper)**                           | Paper Reader                   | Extract ideas from research papers, non-academic focus, arxiv/PDF support      |
+| **[invest](./skills/invest)**                         | Investment Analyzer            | Deep investment analysis, order-creation evaluation, founder interview analysis |
+| **[learn](./skills/learn)**                           | Concept Anatomist              | 8 exploration dimensions, dialectics, phenomenology, epiphany compression      |
+| **[relationship](./skills/relationship)**             | Relationship Analyst           | 5-layer structural diagnostics, psychoanalytic depth, transference patterns    |
+| **[roundtable](./skills/roundtable)**                 | Roundtable Discussion          | Truth-seeking moderator, multi-perspective debate, dialectical framework       |
+| **[travel](./skills/travel)**                         | Travel Researcher              | Museum & architecture research, knowledge docs, portable reference cards       |
+| **[writes](./skills/writes)**                         | Writing Engine                 | Develop ideas through writing, structured thinking process                     |
+| **[card](./skills/card)**                             | Content Caster                 | 6 mold types (long card, infograph, comic, whiteboard, etc.), PNG output       |
+| **[paper-flow](./skills/paper-flow)**                 | Paper Workflow                 | Read papers + cast cards in one go, batch arxiv/PDF processing                 |
+| **[x-download](./skills/x-download)**                 | X/Twitter Media Downloader     | Download images and videos from X/Twitter posts                                |
 
 ## Quick Start
 

@@ -29,6 +29,16 @@
 | **[cover-image](./skills/cover-image)**               | 封面图生成器       | 5 维定制、10 种配色、7 种渲染风格                              |
 | **[translate](./skills/translate)**                   | 文档翻译器         | 快翻/普通/精翻三种模式、自定义术语表、术语一致性               |
 | **[format-markdown](./skills/format-markdown)**       | Markdown 格式化    | 前置元数据、标题、加粗、列表、代码块、格式化输出               |
+| **[paper](./skills/paper)**                           | 论文阅读器         | 提取论文核心思想、非学术视角、支持 arxiv/PDF                   |
+| **[invest](./skills/invest)**                         | 投资分析器         | 深度投资分析、秩序创造机器评估、创始人访谈分析                 |
+| **[learn](./skills/learn)**                           | 概念解剖器         | 8 维探索、辩证法、现象学、顿悟压缩                             |
+| **[relationship](./skills/relationship)**             | 关系分析器         | 5 层结构诊断、精神分析、移情模式识别                           |
+| **[roundtable](./skills/roundtable)**                 | 圆桌讨论           | 求真主持人、多视角辩论、辩证框架                               |
+| **[travel](./skills/travel)**                         | 旅行研究器         | 博物馆与古建研究、知识文档、便携参考卡                         |
+| **[writes](./skills/writes)**                         | 写作引擎           | 在写作过程中发展想法、结构化思考                               |
+| **[card](./skills/card)**                             | 内容铸造器         | 6 种模具（长卡、信息图、漫画、白板等）、PNG 输出               |
+| **[paper-flow](./skills/paper-flow)**                 | 论文工作流         | 读论文 + 做卡片一条龙、批量 arxiv/PDF 处理                    |
+| **[x-download](./skills/x-download)**                 | X/推特媒体下载     | 下载 X/Twitter 帖子中的图片和视频                              |
 
 ## 快速开始
 
