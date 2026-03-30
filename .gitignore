@@ -50,7 +50,3 @@ out/
 # Local settings
 .claude/settings.local.json
 ui-ux-pro-max-website/*
-
-# Skill output
-fal-images/
-youtube-transcript/
