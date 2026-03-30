@@ -23,6 +23,12 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[write-a-skill](./skills/write-a-skill)**                     | Skill Authoring Guide          | TDD for skills, CSO optimization, pressure testing, anti-patterns              |
 | **[youtube-transcript](./skills/youtube-transcript)** | YouTube Transcript Downloader | Multi-language subtitles, translation, chapters, speaker identification        |
 | **[fal-image](./skills/fal-image)**                   | fal.ai Image Generator        | GPT Image 1/1.5, Nano Banana 2, text-to-image, local save                     |
+| **[article-illustrator](./skills/article-illustrator)** | Article Illustrator         | Analyze structure, identify illustration positions, Type x Style generation    |
+| **[comic](./skills/comic)**                           | Knowledge Comic Creator        | Multiple art styles, panel layouts, sequential image generation                |
+| **[compress-image](./skills/compress-image)**         | Image Compressor               | WebP/PNG compression, automatic tool selection                                 |
+| **[cover-image](./skills/cover-image)**               | Cover Image Generator          | 5-dimension customization, 10 palettes, 7 rendering styles                    |
+| **[translate](./skills/translate)**                   | Document Translator            | Quick/normal/refined modes, custom glossaries, terminology consistency          |
+| **[format-markdown](./skills/format-markdown)**       | Markdown Formatter             | Frontmatter, headings, bold, lists, code blocks, formatted output              |
 
 ## Quick Start
 

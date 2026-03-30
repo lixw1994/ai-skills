@@ -23,6 +23,12 @@
 | **[write-a-skill](./skills/write-a-skill)**                     | Skill 编写指南     | Skill 的 TDD 方法、搜索优化、压力测试、反模式                 |
 | **[youtube-transcript](./skills/youtube-transcript)** | YouTube 字幕下载器 | 多语言字幕、翻译、章节、说话人识别                             |
 | **[fal-image](./skills/fal-image)**                   | fal.ai 图片生成器  | GPT Image 1/1.5、Nano Banana 2、文生图、本地保存               |
+| **[article-illustrator](./skills/article-illustrator)** | 文章配图生成器   | 分析文章结构、定位配图位置、类型×风格组合生成                   |
+| **[comic](./skills/comic)**                           | 知识漫画创作器     | 多种艺术风格、分镜布局、序列图像生成                           |
+| **[compress-image](./skills/compress-image)**         | 图片压缩器         | WebP/PNG 压缩、自动工具选择                                    |
+| **[cover-image](./skills/cover-image)**               | 封面图生成器       | 5 维定制、10 种配色、7 种渲染风格                              |
+| **[translate](./skills/translate)**                   | 文档翻译器         | 快翻/普通/精翻三种模式、自定义术语表、术语一致性               |
+| **[format-markdown](./skills/format-markdown)**       | Markdown 格式化    | 前置元数据、标题、加粗、列表、代码块、格式化输出               |
 
 ## 快速开始
 

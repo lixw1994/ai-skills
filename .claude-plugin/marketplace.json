@@ -113,6 +113,48 @@
       "source": "./skills/fal-image",
       "strict": false,
       "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "article-illustrator",
+      "description": "Analyzes article structure, identifies positions requiring visual aids, generates illustrations with Type x Style approach",
+      "source": "./skills/article-illustrator",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "comic",
+      "description": "Knowledge comic creator supporting multiple art styles and tones with detailed panel layouts",
+      "source": "./skills/comic",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "compress-image",
+      "description": "Compresses images to WebP or PNG with automatic tool selection",
+      "source": "./skills/compress-image",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "cover-image",
+      "description": "Generates article cover images with 5-dimensional customization (type, palette, rendering, text, mood)",
+      "source": "./skills/cover-image",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "translate",
+      "description": "Translates articles and documents between languages with quick, normal, and refined modes",
+      "source": "./skills/translate",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "format-markdown",
+      "description": "Formats plain text or markdown files with frontmatter, titles, summaries, headings, and code blocks",
+      "source": "./skills/format-markdown",
+      "strict": false,
+      "skills": ["./SKILL.md"]
     }
   ]
 }
