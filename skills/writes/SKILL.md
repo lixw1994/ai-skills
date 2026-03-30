@@ -1,5 +1,5 @@
 ---
-name: writes
+name: ljg-writes
 description: "写作引擎。带着一个观点出发，在写的过程中把它想透。"
 ---
 

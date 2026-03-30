@@ -1,5 +1,5 @@
 ---
-name: x-download
+name: ljg-x-download
 description: "Download images and videos from X (Twitter) posts to ~/Downloads. Use when user shares an X/Twitter link and wants to save media, or says '下载', 'download', '保存图片', '保存视频', or provides a x.com/twitter.com URL with intent to download media."
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: roundtable
+name: ljg-roundtable
 description: >-
   Structured roundtable discussion framework with a truth-seeking moderator
   who invites representative figures for dialectical debate on any topic.
