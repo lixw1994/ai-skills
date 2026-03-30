@@ -23,7 +23,7 @@ description: "写作引擎。带着一个观点出发，在写的过程中把它
 - 时间戳：`date +%Y%m%dT%H%M%S`
 - 可读时间：`date "+%Y-%m-%d %a %H:%M"`
 - 文件名：`{时间戳}--{标题关键词}__write.md`
-- 输出目录：`Notes/`
+- 输出目录：`{ProjectRootDir}/Notes/`
 
 ### 文件头
 
@@ -217,5 +217,5 @@ description: "写作引擎。带着一个观点出发，在写的过程中把它
 
 1. `date +%Y%m%dT%H%M%S` 和 `date "+%Y-%m-%d %a %H:%M"` 获取时间戳
 2. 从观点中提取关键词作为标题
-3. 写入 `Notes/{时间戳}--{标题关键词}__write.md`
+3. 写入 `{ProjectRootDir}/Notes/{时间戳}--{标题关键词}__write.md`
 4. 报告路径

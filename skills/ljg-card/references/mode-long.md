@@ -85,5 +85,5 @@ Read `~/.claude/skills/ljg-card/assets/long_template.html`
 ## 步骤 5：截图
 
 ```bash
-node ~/.claude/skills/ljg-card/assets/capture.js /tmp/ljg_cast_long_{name}.html Notes/{name}.png 1080 800 fullpage
+node ~/.claude/skills/ljg-card/assets/capture.js /tmp/ljg_cast_long_{name}.html {ProjectRootDir}/Notes/{name}.png 1080 800 fullpage
 ```
