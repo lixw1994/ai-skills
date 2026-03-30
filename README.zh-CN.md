@@ -21,6 +21,7 @@
 | **[test-driven-development](./skills/test-driven-development)** | 测试驱动开发       | 红-绿-重构循环、先写失败测试、最小化代码、反模式指南           |
 | **[brainstorming](./skills/brainstorming)**                     | 创意头脑风暴       | 意图探索、需求发现、可视化辅助、规格审查                       |
 | **[write-a-skill](./skills/write-a-skill)**                     | Skill 编写指南     | Skill 的 TDD 方法、搜索优化、压力测试、反模式                 |
+| **[youtube-transcript](./skills/youtube-transcript)** | YouTube 字幕下载器 | 多语言字幕、翻译、章节、说话人识别                             |
 
 ## 快速开始
 

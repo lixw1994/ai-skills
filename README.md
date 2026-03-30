@@ -21,6 +21,7 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[test-driven-development](./skills/test-driven-development)** | Test-Driven Development        | Red-Green-Refactor cycle, failing test first, minimal code, anti-patterns guide |
 | **[brainstorming](./skills/brainstorming)**                     | Creative Brainstorming         | Intent exploration, requirements discovery, visual companion, spec review       |
 | **[write-a-skill](./skills/write-a-skill)**                     | Skill Authoring Guide          | TDD for skills, CSO optimization, pressure testing, anti-patterns              |
+| **[youtube-transcript](./skills/youtube-transcript)** | YouTube Transcript Downloader | Multi-language subtitles, translation, chapters, speaker identification        |
 
 ## Quick Start
 
