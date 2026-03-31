@@ -53,25 +53,27 @@ Assistant: [对"熵"进行八维解剖，生成 Markdown 报告]
 整合为 Markdown，结构：
 
 ```
-#+title: 概念解剖：{概念名}
-#+filetags: :concept:
-#+date: [YYYY-MM-DD]
+---
+title: 概念解剖：{概念名}
+date: YYYY-MM-DD
+tags: [concept]
+---
 
-* 定锚
-* 八刀
-** 历史
-** 辩证
-** 现象
-** 语言
-** 形式
-** 存在
-** 美感
-** 元反思
-* 内观
-* 压缩
+# 定锚
+# 八刀
+## 历史
+## 辩证
+## 现象
+## 语言
+## 形式
+## 存在
+## 美感
+## 元反思
+# 内观
+# 压缩
 ```
 
 写入文件：
-1. 运行 `date +%Y%m%dT%H%M%S` 获取时间戳。
-2. 写入 `{ProjectRootDir}/Notes/{timestamp}--概念解剖-{概念名}__concept.md`。
+1. 运行 `date +%Y-%m-%d` 获取当前日期。
+2. 写入 `{ProjectRootDir}/Notes/YYYY-MM-DD-概念解剖-{概念名}.md`。
 3. 报告路径，完成。

@@ -93,21 +93,24 @@ Assistant: [Launches roundtable discussion on free will]
 
 7. **写入 Markdown 文件**
    将讨论全貌整合为 Markdown 格式并写入文件：
-   1. 运行 `date +%Y%m%dT%H%M%S` 获取时间戳
-   2. 写入 `{ProjectRootDir}/Notes/{timestamp}--圆桌-{议题关键词}__roundtable.md`
+   1. 运行 `date +%Y-%m-%d` 获取当前日期
+   2. 写入 `{ProjectRootDir}/Notes/YYYY-MM-DD-圆桌-{议题关键词}.md`
    3. 文件结构：
       ```
-      #+title: 圆桌：{议题}
-      #+date: [{日期}]
-      #+filetags: :roundtable:
-      * 议题与参会者
-      * 各轮讨论记录
-      ** 第 N 轮：{引导问题}
-      *** 发言记录
-      *** 核心争议
-      *** ASCII 框架图
-      * 知识网络（全局）
-      * 开放问题
+      ---
+      title: 圆桌：{议题}
+      date: YYYY-MM-DD
+      tags: [roundtable]
+      ---
+
+      # 议题与参会者
+      # 各轮讨论记录
+      ## 第 N 轮：{引导问题}
+      ### 发言记录
+      ### 核心争议
+      ### ASCII 框架图
+      # 知识网络（全局）
+      # 开放问题
       ```
    4. 向用户报告文件路径
 

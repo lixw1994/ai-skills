@@ -18,21 +18,21 @@ description: "写作引擎。带着一个观点出发，在写的过程中把它
 
 所有图表用纯 ASCII 字符。允许：`+ - | / \ > < v ^ * = ~ . : # [ ] ( ) _ , ; ! ' "` 和空格。禁止 Unicode 绘图符号。
 
-### Denote 文件规范
+### 文件规范
 
-- 时间戳：`date +%Y%m%dT%H%M%S`
-- 可读时间：`date "+%Y-%m-%d %a %H:%M"`
-- 文件名：`{时间戳}--{标题关键词}__write.md`
+- 日期：`date +%Y-%m-%d`
+- 文件名：`YYYY-MM-DD-{标题关键词}.md`
 - 输出目录：`{ProjectRootDir}/Notes/`
 
 ### 文件头
 
 ```
-#+title:      {标题}
-#+date:       [{YYYY-MM-DD Day HH:MM}]
-#+filetags:   :write:
-#+identifier: {YYYYMMDDTHHMMSS}
-#+author:     李继刚
+---
+title: {标题}
+date: YYYY-MM-DD
+tags: [write]
+author: 李继刚
+---
 ```
 
 文件写入后报告路径。
@@ -215,7 +215,7 @@ description: "写作引擎。带着一个观点出发，在写的过程中把它
 
 ## 输出
 
-1. `date +%Y%m%dT%H%M%S` 和 `date "+%Y-%m-%d %a %H:%M"` 获取时间戳
+1. `date +%Y-%m-%d` 获取当前日期
 2. 从观点中提取关键词作为标题
-3. 写入 `{ProjectRootDir}/Notes/{时间戳}--{标题关键词}__write.md`
+3. 写入 `{ProjectRootDir}/Notes/YYYY-MM-DD-{标题关键词}.md`
 4. 报告路径
