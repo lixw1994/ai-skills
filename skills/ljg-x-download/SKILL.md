@@ -1,11 +1,11 @@
 ---
 name: ljg-x-download
-description: "Download images and videos from X (Twitter) posts to {ProjectRootDir}/Notes/downloads/. Use when user shares an X/Twitter link and wants to save media, or says '下载', 'download', '保存图片', '保存视频', or provides a x.com/twitter.com URL with intent to download media."
+description: "Download images and videos from X (Twitter) posts to {ProjectRootDir}/Notes/x-download/. Use when user shares an X/Twitter link and wants to save media, or says '下载', 'download', '保存图片', '保存视频', or provides a x.com/twitter.com URL with intent to download media."
 ---
 
 # ljg-x-download
 
-从 X (Twitter) 链接下载图片或视频到 {ProjectRootDir}/Notes/downloads/。
+从 X (Twitter) 链接下载图片或视频到 {ProjectRootDir}/Notes/x-download/。
 
 ## 依赖
 
@@ -30,7 +30,7 @@ description: "Download images and videos from X (Twitter) posts to {ProjectRootD
 直接用 yt-dlp 下载，无需先探测：
 
 ```bash
-yt-dlp -o "{ProjectRootDir}/Notes/downloads/%(uploader)s_%(id)s.%(ext)s" "URL"
+yt-dlp -o "{ProjectRootDir}/Notes/x-download/%(uploader)s_%(id)s.%(ext)s" "URL"
 ```
 
 如果成功（视频推文），完成。跳到步骤 4 汇报结果。
@@ -54,8 +54,8 @@ yt-dlp --dump-json "URL" 2>&1
 从 JSON 的 `thumbnails` 数组提取所有图片 URL，替换 `name=small` 或 `name=medium` 为 `name=orig` 获取原图，然后逐一下载：
 
 ```bash
-curl -L -o {ProjectRootDir}/Notes/downloads/tweet_ID_1.jpg "https://pbs.twimg.com/media/xxx?format=jpg&name=orig"
-curl -L -o {ProjectRootDir}/Notes/downloads/tweet_ID_2.jpg "https://pbs.twimg.com/media/yyy?format=jpg&name=orig"
+curl -L -o {ProjectRootDir}/Notes/x-download/tweet_ID_1.jpg "https://pbs.twimg.com/media/xxx?format=jpg&name=orig"
+curl -L -o {ProjectRootDir}/Notes/x-download/tweet_ID_2.jpg "https://pbs.twimg.com/media/yyy?format=jpg&name=orig"
 ```
 
 文件扩展名跟随 URL 中的 `format` 参数（jpg/png/webp）。
@@ -71,7 +71,7 @@ curl -L -o {ProjectRootDir}/Notes/downloads/tweet_ID_2.jpg "https://pbs.twimg.co
 yt-dlp 报错含 `login` / `Sign in` / `age-restricted` 时，加 `--cookies-from-browser chrome`：
 
 ```bash
-yt-dlp --cookies-from-browser chrome -o "{ProjectRootDir}/Notes/downloads/%(uploader)s_%(id)s.%(ext)s" "URL"
+yt-dlp --cookies-from-browser chrome -o "{ProjectRootDir}/Notes/x-download/%(uploader)s_%(id)s.%(ext)s" "URL"
 ```
 
 ### 推文无媒体
