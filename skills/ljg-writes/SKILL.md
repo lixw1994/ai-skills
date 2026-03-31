@@ -22,7 +22,7 @@ description: "写作引擎。带着一个观点出发，在写的过程中把它
 
 - 日期：`date +%Y-%m-%d`
 - 文件名：`YYYY-MM-DD-{标题关键词}.md`
-- 输出目录：`{ProjectRootDir}/Notes/`
+- 输出目录：`{ProjectRootDir}/Notes/writes/`
 
 ### 文件头
 
@@ -217,5 +217,5 @@ author: 李继刚
 
 1. `date +%Y-%m-%d` 获取当前日期
 2. 从观点中提取关键词作为标题
-3. 写入 `{ProjectRootDir}/Notes/YYYY-MM-DD-{标题关键词}.md`
+3. 写入 `{ProjectRootDir}/Notes/writes/YYYY-MM-DD-{标题关键词}.md`
 4. 报告路径

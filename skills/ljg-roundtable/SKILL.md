@@ -94,7 +94,7 @@ Assistant: [Launches roundtable discussion on free will]
 7. **写入 Markdown 文件**
    将讨论全貌整合为 Markdown 格式并写入文件：
    1. 运行 `date +%Y-%m-%d` 获取当前日期
-   2. 写入 `{ProjectRootDir}/Notes/YYYY-MM-DD-圆桌-{议题关键词}.md`
+   2. 写入 `{ProjectRootDir}/Notes/roundtable/YYYY-MM-DD-圆桌-{议题关键词}.md`
    3. 文件结构：
       ```
       ---

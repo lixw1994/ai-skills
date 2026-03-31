@@ -396,5 +396,5 @@ Read `~/.claude/skills/ljg-card/assets/whiteboard_template.html`
 ## 步骤 6：截图
 
 ```bash
-node ~/.claude/skills/ljg-card/assets/capture.js /tmp/ljg_cast_whiteboard_{name}.html {ProjectRootDir}/Notes/{name}.png 1080 800 fullpage
+node ~/.claude/skills/ljg-card/assets/capture.js /tmp/ljg_cast_whiteboard_{name}.html {ProjectRootDir}/Notes/cards/{name}.png 1080 800 fullpage
 ```

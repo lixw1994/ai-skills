@@ -75,5 +75,5 @@ tags: [concept]
 
 写入文件：
 1. 运行 `date +%Y-%m-%d` 获取当前日期。
-2. 写入 `{ProjectRootDir}/Notes/YYYY-MM-DD-概念解剖-{概念名}.md`。
+2. 写入 `{ProjectRootDir}/Notes/concepts/YYYY-MM-DD-概念解剖-{概念名}.md`。
 3. 报告路径，完成。
