@@ -165,11 +165,11 @@ tags: [travel, museum, architecture]
 
 **卡片 A — 城市文明概览（信息图）：**
 
-调用 Skill tool 执行 `ljg-card -i`，输入内容为：城市历史分层 + 核心博物馆清单 + 必看古建清单的精华摘要。一张图看懂这座城市的文明骨架。
+调用 Skill tool 执行 `ljg-card -i -o {ProjectRootDir}/Notes/travel/`，输入内容为：城市历史分层 + 核心博物馆清单 + 必看古建清单的精华摘要。一张图看懂这座城市的文明骨架。
 
 **卡片 B — 参观路线速查（长图）：**
 
-调用 Skill tool 执行 `ljg-card -l`，输入内容为：参观路线建议 + 每个地点的核心看点。手机上随时查看。
+调用 Skill tool 执行 `ljg-card -l -o {ProjectRootDir}/Notes/travel/`，输入内容为：参观路线建议 + 每个地点的核心看点。手机上随时查看。
 
 ### 6. 汇总报告
 

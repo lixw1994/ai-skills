@@ -101,12 +101,12 @@ Read `~/.claude/skills/ljg-card/assets/poster_template.html`
 
 **结尾标记**：仅在最后一张卡的 `{{BODY_HTML}}` 末尾追加 `<p style="text-align:right;font-size:16px;color:#ACACB0;margin-top:40px;">∎</p>`。非末页不加。
 
-写入：`/tmp/ljg_cast_poster_{name}_{N}.html`
+写入：`{OutputDir}/{name}_{N}.html`
 
 ## 步骤 7：截图
 
 ```bash
-node ~/.claude/skills/ljg-card/assets/capture.js /tmp/ljg_cast_poster_{name}_{N}.html {ProjectRootDir}/Notes/cards/{name}_{N}.png 1080 1440
+node ~/.claude/skills/ljg-card/assets/capture.js {OutputDir}/{name}_{N}.html {OutputDir}/{name}_{N}.png 1080 1440
 ```
 
 多张卡片可并行截图。

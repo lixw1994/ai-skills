@@ -80,10 +80,10 @@ Read `~/.claude/skills/ljg-card/assets/long_template.html`
 | `{{SOURCE}}` | 来源/作者信息（用户提供则填入，否则 `李继刚`） |
 | `{{ARXIV_LINE}}` | 内容来自 arxiv 论文时：`<span class="arxiv">arxiv: XXXX.XXXXX</span>`；否则空字符串 |
 
-写入：`/tmp/ljg_cast_long_{name}.html`
+写入：`{OutputDir}/{name}.html`
 
 ## 步骤 5：截图
 
 ```bash
-node ~/.claude/skills/ljg-card/assets/capture.js /tmp/ljg_cast_long_{name}.html {ProjectRootDir}/Notes/cards/{name}.png 1080 800 fullpage
+node ~/.claude/skills/ljg-card/assets/capture.js {OutputDir}/{name}.html {OutputDir}/{name}.png 1080 800 fullpage
 ```

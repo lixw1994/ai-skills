@@ -219,7 +219,7 @@ v
 | `{{SOURCE}}` | 署名 |
 | `{{ARXIV_LINE}}` | arxiv 时填入，否则空 |
 
-写入：`/tmp/ljg_cast_sketchnote_{name}.html`
+写入：`{OutputDir}/{name}.html`
 
 ## 步骤 5：自检
 
@@ -236,5 +236,5 @@ v
 ## 步骤 6：截图
 
 ```bash
-node ~/.claude/skills/ljg-card/assets/capture.js /tmp/ljg_cast_sketchnote_{name}.html {ProjectRootDir}/Notes/cards/{name}.png 1080 800 fullpage
+node ~/.claude/skills/ljg-card/assets/capture.js {OutputDir}/{name}.html {OutputDir}/{name}.png 1080 800 fullpage
 ```

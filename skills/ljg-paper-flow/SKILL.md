@@ -35,7 +35,7 @@ description: "Paper workflow: read papers + cast cards in one go. Takes one or m
 
 **步骤 B — 铸卡片（ljg-card）：**
 
-读取步骤 A 生成的 Markdown 文件，调用 Skill tool 执行 `ljg-card`（默认 `-l`，或按用户指定的模具参数），以 Markdown 文件内容为输入。等待完成，获得 PNG 文件路径。
+读取步骤 A 生成的 Markdown 文件，调用 Skill tool 执行 `ljg-card -o {ProjectRootDir}/Notes/papers/`（默认 `-l`，或按用户指定的模具参数），以 Markdown 文件内容为输入。等待完成，获得 PNG 文件路径。
 
 ### 3. 汇总报告
 

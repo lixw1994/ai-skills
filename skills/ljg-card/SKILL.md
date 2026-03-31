@@ -17,6 +17,7 @@ description: "Content caster (铸). Transforms content into PNG visuals. Six mol
 | `-v` | 视觉笔记 | 1080 x auto | 手绘风格 sketchnote，动态选择风格路线 |
 | `-c` | 漫画 | 1080 x auto | 日式黑白漫画风格，动态选择漫画家视觉语言 |
 | `-w` | 白板 | 1080 x auto | 白板马克笔风格，结构化框图+箭头+彩色标记 |
+| `-o <dir>` | — | — | 输出目录，默认 `{ProjectRootDir}/Notes/cards/` |
 
 ## 约束
 
@@ -33,6 +34,12 @@ description: "Content caster (铸). Transforms content into PNG visuals. Six mol
 ### 文件命名
 
 从内容提取标题或核心思想作为 `{name}`（中文直接用，去标点，≤ 20 字符）。
+
+### 输出目录
+
+`{OutputDir}` = `-o` 指定的目录，未指定时为 `{ProjectRootDir}/Notes/cards/`。
+
+HTML 和 PNG 均保存到 `{OutputDir}`，HTML 是有价值的中间产物，保留备查。
 
 ### 截图工具
 
