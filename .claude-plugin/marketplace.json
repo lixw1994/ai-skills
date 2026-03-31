@@ -225,6 +225,27 @@
       "source": "./skills/ljg-x-download",
       "strict": false,
       "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "ljg-fomo",
+      "description": "Tech trend research workflow — kill FOMO in 10 minutes with structured knowledge note and summary card",
+      "source": "./skills/ljg-fomo",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "ljg-preface",
+      "description": "Recommendation preface writer — standalone 400-600 word essay with hook opening and seamless quote integration",
+      "source": "./skills/ljg-preface",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "ljg-arrow",
+      "description": "Root-tracing arrow — drills vertically from surface to irreducible essence, layer by layer",
+      "source": "./skills/ljg-arrow",
+      "strict": false,
+      "skills": ["./SKILL.md"]
     }
   ]
 }

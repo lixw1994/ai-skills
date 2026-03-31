@@ -39,6 +39,9 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[ljg-card](./skills/ljg-card)**                     | Content Caster                 | 6 mold types (long card, infograph, comic, whiteboard, etc.), PNG output       |
 | **[ljg-paper-flow](./skills/ljg-paper-flow)**         | Paper Workflow                 | Read papers + cast cards in one go, batch arxiv/PDF processing                 |
 | **[ljg-x-download](./skills/ljg-x-download)**         | X/Twitter Media Downloader     | Download images and videos from X/Twitter posts                                |
+| **[ljg-fomo](./skills/ljg-fomo)**                     | FOMO Killer                    | Kill tech FOMO in 10 min, structured knowledge note + summary card             |
+| **[ljg-preface](./skills/ljg-preface)**               | Recommendation Preface         | Standalone essay with hook opening, opinion-first, seamless quote integration  |
+| **[ljg-arrow](./skills/ljg-arrow)**                   | Root-Tracing Arrow             | Vertical drilling from surface to bedrock, layer by layer to irreducible truth |
 
 ## Quick Start
 

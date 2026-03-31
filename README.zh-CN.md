@@ -39,6 +39,9 @@
 | **[ljg-card](./skills/ljg-card)**                     | 内容铸造器         | 6 种模具（长卡、信息图、漫画、白板等）、PNG 输出               |
 | **[ljg-paper-flow](./skills/ljg-paper-flow)**         | 论文工作流         | 读论文 + 做卡片一条龙、批量 arxiv/PDF 处理                    |
 | **[ljg-x-download](./skills/ljg-x-download)**         | X/推特媒体下载     | 下载 X/Twitter 帖子中的图片和视频                              |
+| **[ljg-fomo](./skills/ljg-fomo)**                     | FOMO 杀手          | 10 分钟消灭技术焦虑、结构化知识笔记 + 速览卡片                |
+| **[ljg-preface](./skills/ljg-preface)**               | 推荐序             | 独立成篇、钩子开篇、观点先行、金句无痕融入                    |
+| **[ljg-arrow](./skills/ljg-arrow)**                   | 追本之箭           | 纵向深钻、逐层追问到不可再分的基岩                             |
 
 ## 快速开始
 
