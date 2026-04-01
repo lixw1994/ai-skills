@@ -2,7 +2,7 @@
 
 ## 步骤 1：读取模板
 
-Read `~/.claude/skills/lixw-card/assets/long_template.html`
+Read `{baseDir}/assets/long_template.html`
 
 ## 步骤 2：内容预处理
 
@@ -77,6 +77,7 @@ Read `~/.claude/skills/lixw-card/assets/long_template.html`
 | `{{ACCENT_COLOR}}` | 步骤 2.5 确定的强调色 |
 | `{{TITLE_BLOCK}}` | 有标题时：`<div class="title-area"><h1>标题</h1></div>`；无标题时：空字符串 |
 | `{{BODY_HTML}}` | 步骤 3 生成的全部 HTML |
+| `{{LOGO_PATH}}` | `file://{baseDir}/assets/logo.png` |
 | `{{SOURCE}}` | 来源/作者信息（用户提供则填入，否则 `李宪伟`） |
 | `{{ARXIV_LINE}}` | 内容来自 arxiv 论文时：`<span class="arxiv">arxiv: XXXX.XXXXX</span>`；否则空字符串 |
 
@@ -85,5 +86,5 @@ Read `~/.claude/skills/lixw-card/assets/long_template.html`
 ## 步骤 5：截图
 
 ```bash
-node ~/.claude/skills/lixw-card/assets/capture.js {OutputDir}/{name}.html {OutputDir}/{name}.png 1080 800 fullpage
+node {baseDir}/assets/capture.js {OutputDir}/{name}.html {OutputDir}/{name}.png 1080 800 fullpage
 ```

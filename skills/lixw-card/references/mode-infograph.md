@@ -8,7 +8,7 @@
 
 ## 步骤 1：读取模板
 
-Read `~/.claude/skills/lixw-card/assets/infograph_template.html`
+Read `{baseDir}/assets/infograph_template.html`
 
 模板极简，只提供：
 - 字体加载（DM Serif Display + DM Sans + KingHwa_OldSong）
@@ -268,6 +268,7 @@ Read `~/.claude/skills/lixw-card/assets/infograph_template.html`
 |------|------|
 | `{{CUSTOM_CSS}}` | 这张图的全部 CSS |
 | `{{CONTENT_HTML}}` | 这张图的全部 HTML |
+| `{{LOGO_PATH}}` | `file://{baseDir}/assets/logo.png` |
 | `{{SOURCE}}` | 署名 |
 | `{{ARXIV_LINE}}` | arxiv 时 `<span class="arxiv">arxiv: XXXX.XXXXX</span>`，否则空 |
 
@@ -290,5 +291,5 @@ Read `~/.claude/skills/lixw-card/assets/infograph_template.html`
 ## 步骤 6：截图
 
 ```bash
-node ~/.claude/skills/lixw-card/assets/capture.js {OutputDir}/{name}.html {OutputDir}/{name}.png 1080 800 fullpage
+node {baseDir}/assets/capture.js {OutputDir}/{name}.html {OutputDir}/{name}.png 1080 800 fullpage
 ```

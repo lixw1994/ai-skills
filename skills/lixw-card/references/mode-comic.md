@@ -8,7 +8,7 @@
 
 ## 步骤 1：读取模板
 
-Read `~/.claude/skills/lixw-card/assets/comic_template.html`
+Read `{baseDir}/assets/comic_template.html`
 
 模板提供：
 - 字体加载（Noto Serif SC + DM Sans）
@@ -318,6 +318,7 @@ Read `~/.claude/skills/lixw-card/assets/comic_template.html`
 |------|------|
 | `{{CUSTOM_CSS}}` | 全部 CSS（包括 :root 覆盖） |
 | `{{CONTENT_HTML}}` | 全部 HTML |
+| `{{LOGO_PATH}}` | `file://{baseDir}/assets/logo.png` |
 | `{{SOURCE}}` | 署名 |
 | `{{ARXIV_LINE}}` | arxiv 时填入，否则空 |
 
@@ -338,5 +339,5 @@ Read `~/.claude/skills/lixw-card/assets/comic_template.html`
 ## 步骤 6：截图
 
 ```bash
-node ~/.claude/skills/lixw-card/assets/capture.js {OutputDir}/{name}.html {OutputDir}/{name}.png 1080 800 fullpage
+node {baseDir}/assets/capture.js {OutputDir}/{name}.html {OutputDir}/{name}.png 1080 800 fullpage
 ```

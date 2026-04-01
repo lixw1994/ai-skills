@@ -15,7 +15,7 @@
 
 ## 步骤 1：读取模板
 
-Read `~/.claude/skills/lixw-card/assets/whiteboard_template.html`
+Read `{baseDir}/assets/whiteboard_template.html`
 
 模板提供：
 - 书写字体加载（Permanent Marker + Kalam）
@@ -374,6 +374,7 @@ Read `~/.claude/skills/lixw-card/assets/whiteboard_template.html`
 |------|------|
 | `{{CUSTOM_CSS}}` | 全部自定义 CSS |
 | `{{CONTENT_HTML}}` | 全部内容 HTML |
+| `{{LOGO_PATH}}` | `file://{baseDir}/assets/logo.png` |
 | `{{SOURCE}}` | 署名 |
 | `{{ARXIV_LINE}}` | arxiv 时填入，否则空 |
 
@@ -396,5 +397,5 @@ Read `~/.claude/skills/lixw-card/assets/whiteboard_template.html`
 ## 步骤 6：截图
 
 ```bash
-node ~/.claude/skills/lixw-card/assets/capture.js {OutputDir}/{name}.html {OutputDir}/{name}.png 1080 800 fullpage
+node {baseDir}/assets/capture.js {OutputDir}/{name}.html {OutputDir}/{name}.png 1080 800 fullpage
 ```

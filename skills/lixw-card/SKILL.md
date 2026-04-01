@@ -44,14 +44,18 @@ HTML 和 PNG 均保存到 `{OutputDir}`，HTML 是有价值的中间产物，保
 ### 截图工具
 
 ```bash
-node ~/.claude/skills/lixw-card/assets/capture.js <html> <png> <width> <height> [fullpage]
+node {baseDir}/assets/capture.js <html> <png> <width> <height> [fullpage]
 ```
 
-依赖：`~/.claude/skills/lixw-card/node_modules/` 中的 playwright。如报错：
+依赖：`{baseDir}/node_modules/` 中的 playwright。如报错：
 
 ```bash
-cd ~/.claude/skills/lixw-card && npm install playwright && npx playwright install chromium
+cd {baseDir} && npm install playwright && npx playwright install chromium
 ```
+
+### 模板变量
+
+HTML 模板中使用占位符，填充时替换为实际值。其中 `{{LOGO_PATH}}` 替换为 `file://{baseDir}/assets/logo.png`（`{baseDir}` 解析为 SKILL.md 所在目录的绝对路径）。
 
 ### arxiv 检测
 

@@ -2,7 +2,7 @@
 
 ## 步骤 1：读取模板
 
-Read `~/.claude/skills/lixw-card/assets/poster_template.html`
+Read `{baseDir}/assets/poster_template.html`
 
 ## 步骤 1.5：色调感知
 
@@ -96,6 +96,7 @@ Read `~/.claude/skills/lixw-card/assets/poster_template.html`
 | `{{HEADER_BLOCK}}` | 续页卡：`<div class="header"><span class="running-title">文章标题</span></div>`；首卡或单卡：空字符串 |
 | `{{TITLE_BLOCK}}` | 首卡有标题时：`<div class="title-area"><h1>标题</h1></div>`；续页卡或无标题时：空字符串 |
 | `{{BODY_HTML}}` | 步骤 5 生成的 HTML |
+| `{{LOGO_PATH}}` | `file://{baseDir}/assets/logo.png` |
 | `{{SOURCE}}` | 来源/作者信息（用户提供则填入，否则 `李宪伟`） |
 | `{{PAGE_INFO}}` | 多卡时 `1 / 3`，单卡时空字符串 |
 
@@ -106,7 +107,7 @@ Read `~/.claude/skills/lixw-card/assets/poster_template.html`
 ## 步骤 7：截图
 
 ```bash
-node ~/.claude/skills/lixw-card/assets/capture.js {OutputDir}/{name}_{N}.html {OutputDir}/{name}_{N}.png 1080 1440
+node {baseDir}/assets/capture.js {OutputDir}/{name}_{N}.html {OutputDir}/{name}_{N}.png 1080 1440
 ```
 
 多张卡片可并行截图。
