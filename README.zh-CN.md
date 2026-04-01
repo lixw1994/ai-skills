@@ -8,7 +8,6 @@
 
 | Skill                                                             | 描述               | 关键能力                                                       |
 | ----------------------------------------------------------------- | ------------------ | -------------------------------------------------------------- |
-| **[ui-ux-pro-max](./skills/ui-ux-pro-max)**                       | UI/UX 设计智能助手 | 50 种设计风格、21 套配色方案、50 组字体搭配、9 种技术栈支持    |
 | **[xlsx](./skills/xlsx)**                                         | Excel 电子表格处理 | 创建、编辑、分析、公式计算、数据可视化                         |
 | **[ceo-advisor](./skills/ceo-advisor)**                           | CEO 执行领导力     | 战略分析器、财务建模、董事会治理、投资者关系                   |
 | **[cto-advisor](./skills/cto-advisor)**                           | CTO 技术领导力     | 技术债务分析、团队扩展、DORA 指标、ADR 模板                    |
@@ -21,14 +20,14 @@
 | **[test-driven-development](./skills/test-driven-development)** | 测试驱动开发       | 红-绿-重构循环、先写失败测试、最小化代码、反模式指南           |
 | **[brainstorming](./skills/brainstorming)**                     | 创意头脑风暴       | 意图探索、需求发现、可视化辅助、规格审查                       |
 | **[write-a-skill](./skills/write-a-skill)**                     | Skill 编写指南     | Skill 的 TDD 方法、搜索优化、压力测试、反模式                 |
-| **[youtube-transcript](./skills/youtube-transcript)** | YouTube 字幕下载器 | 多语言字幕、翻译、章节、说话人识别                             |
-| **[fal-image](./skills/fal-image)**                   | fal.ai 图片生成器  | GPT Image 1/1.5、Nano Banana 2、文生图、本地保存               |
-| **[article-illustrator](./skills/article-illustrator)** | 文章配图生成器   | 分析文章结构、定位配图位置、类型×风格组合生成                   |
-| **[comic](./skills/comic)**                           | 知识漫画创作器     | 多种艺术风格、分镜布局、序列图像生成                           |
-| **[compress-image](./skills/compress-image)**         | 图片压缩器         | WebP/PNG 压缩、自动工具选择                                    |
-| **[cover-image](./skills/cover-image)**               | 封面图生成器       | 5 维定制、10 种配色、7 种渲染风格                              |
-| **[translate](./skills/translate)**                   | 文档翻译器         | 快翻/普通/精翻三种模式、自定义术语表、术语一致性               |
-| **[format-markdown](./skills/format-markdown)**       | Markdown 格式化    | 前置元数据、标题、加粗、列表、代码块、格式化输出               |
+| **[lixw-youtube-transcript](./skills/lixw-youtube-transcript)** | YouTube 字幕下载器 | 多语言字幕、翻译、章节、说话人识别                             |
+| **[lixw-fal-image](./skills/lixw-fal-image)**                   | fal.ai 图片生成器  | GPT Image 1/1.5、Nano Banana 2、文生图、本地保存               |
+| **[lixw-article-illustrator](./skills/lixw-article-illustrator)** | 文章配图生成器   | 分析文章结构、定位配图位置、类型×风格组合生成                   |
+| **[lixw-comic](./skills/lixw-comic)**                           | 知识漫画创作器     | 多种艺术风格、分镜布局、序列图像生成                           |
+| **[lixw-compress-image](./skills/lixw-compress-image)**         | 图片压缩器         | WebP/PNG 压缩、自动工具选择                                    |
+| **[lixw-cover-image](./skills/lixw-cover-image)**               | 封面图生成器       | 5 维定制、10 种配色、7 种渲染风格                              |
+| **[lixw-translate](./skills/lixw-translate)**         | 文档翻译器         | 快翻/普通/精翻三种模式、自定义术语表、术语一致性               |
+| **[lixw-format-markdown](./skills/lixw-format-markdown)**       | Markdown 格式化    | 前置元数据、标题、加粗、列表、代码块、格式化输出               |
 | **[lixw-paper](./skills/lixw-paper)**                   | 论文阅读器         | 提取论文核心思想、非学术视角、支持 arxiv/PDF                   |
 | **[lixw-invest](./skills/lixw-invest)**                 | 投资分析器         | 深度投资分析、秩序创造机器评估、创始人访谈分析                 |
 | **[lixw-learn](./skills/lixw-learn)**                   | 概念解剖器         | 8 维探索、辩证法、现象学、顿悟压缩                             |
@@ -75,8 +74,8 @@ ai-skills/
 ├── .claude-plugin/        # Plugin 配置
 │   └── marketplace.json   # Marketplace 配置文件
 ├── skills/                # Skills 集合
-│   ├── ui-ux-pro-max/     # UI/UX 设计智能
 │   ├── xlsx/              # Excel 处理
+│   ├── lixw-*/            # 个人 Skills 集合
 │   ├── ceo-advisor/       # CEO 执行领导力
 │   ├── cto-advisor/       # CTO 技术领导力
 │   ├── content-creator/   # 内容营销

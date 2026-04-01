@@ -8,7 +8,6 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 
 | Skill                                                             | Description                    | Key Features                                                           |
 | ----------------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------- |
-| **[ui-ux-pro-max](./skills/ui-ux-pro-max)**                       | UI/UX Design Intelligence      | 50 styles, 21 color palettes, 50 font pairings, 9 tech stacks          |
 | **[xlsx](./skills/xlsx)**                                         | Excel Spreadsheet Processing   | Create, edit, analyze, formulas, data visualization                    |
 | **[ceo-advisor](./skills/ceo-advisor)**                           | CEO Executive Leadership       | Strategy analyzer, financial modeling, board governance, investor relations |
 | **[cto-advisor](./skills/cto-advisor)**                           | CTO Technical Leadership       | Tech debt analyzer, team scaling, DORA metrics, ADR templates          |
@@ -21,14 +20,14 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[test-driven-development](./skills/test-driven-development)** | Test-Driven Development        | Red-Green-Refactor cycle, failing test first, minimal code, anti-patterns guide |
 | **[brainstorming](./skills/brainstorming)**                     | Creative Brainstorming         | Intent exploration, requirements discovery, visual companion, spec review       |
 | **[write-a-skill](./skills/write-a-skill)**                     | Skill Authoring Guide          | TDD for skills, CSO optimization, pressure testing, anti-patterns              |
-| **[youtube-transcript](./skills/youtube-transcript)** | YouTube Transcript Downloader | Multi-language subtitles, translation, chapters, speaker identification        |
-| **[fal-image](./skills/fal-image)**                   | fal.ai Image Generator        | GPT Image 1/1.5, Nano Banana 2, text-to-image, local save                     |
-| **[article-illustrator](./skills/article-illustrator)** | Article Illustrator         | Analyze structure, identify illustration positions, Type x Style generation    |
-| **[comic](./skills/comic)**                           | Knowledge Comic Creator        | Multiple art styles, panel layouts, sequential image generation                |
-| **[compress-image](./skills/compress-image)**         | Image Compressor               | WebP/PNG compression, automatic tool selection                                 |
-| **[cover-image](./skills/cover-image)**               | Cover Image Generator          | 5-dimension customization, 10 palettes, 7 rendering styles                    |
-| **[translate](./skills/translate)**                   | Document Translator            | Quick/normal/refined modes, custom glossaries, terminology consistency          |
-| **[format-markdown](./skills/format-markdown)**       | Markdown Formatter             | Frontmatter, headings, bold, lists, code blocks, formatted output              |
+| **[lixw-youtube-transcript](./skills/lixw-youtube-transcript)** | YouTube Transcript Downloader | Multi-language subtitles, translation, chapters, speaker identification        |
+| **[lixw-fal-image](./skills/lixw-fal-image)**                   | fal.ai Image Generator        | GPT Image 1/1.5, Nano Banana 2, text-to-image, local save                     |
+| **[lixw-article-illustrator](./skills/lixw-article-illustrator)** | Article Illustrator         | Analyze structure, identify illustration positions, Type x Style generation    |
+| **[lixw-comic](./skills/lixw-comic)**                           | Knowledge Comic Creator        | Multiple art styles, panel layouts, sequential image generation                |
+| **[lixw-compress-image](./skills/lixw-compress-image)**         | Image Compressor               | WebP/PNG compression, automatic tool selection                                 |
+| **[lixw-cover-image](./skills/lixw-cover-image)**               | Cover Image Generator          | 5-dimension customization, 10 palettes, 7 rendering styles                    |
+| **[lixw-translate](./skills/lixw-translate)**         | Document Translator            | Quick/normal/refined modes, custom glossaries, terminology consistency          |
+| **[lixw-format-markdown](./skills/lixw-format-markdown)**       | Markdown Formatter             | Frontmatter, headings, bold, lists, code blocks, formatted output              |
 | **[lixw-paper](./skills/lixw-paper)**                   | Paper Reader                   | Extract ideas from research papers, non-academic focus, arxiv/PDF support      |
 | **[lixw-invest](./skills/lixw-invest)**                 | Investment Analyzer            | Deep investment analysis, order-creation evaluation, founder interview analysis |
 | **[lixw-learn](./skills/lixw-learn)**                   | Concept Anatomist              | 8 exploration dimensions, dialectics, phenomenology, epiphany compression      |
@@ -75,8 +74,8 @@ ai-skills/
 ├── .claude-plugin/        # Plugin configuration
 │   └── marketplace.json   # Marketplace config file
 ├── skills/                # Skills collection
-│   ├── ui-ux-pro-max/     # UI/UX design intelligence
-│   └── xlsx/              # Excel processing
+│   ├── xlsx/              # Excel processing
+│   └── lixw-*/            # Personal skills collection
 ├── template/              # Skill template
 └── spec/                  # Agent Skills specification
 ```

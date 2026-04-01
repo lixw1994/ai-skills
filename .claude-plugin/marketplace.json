@@ -10,13 +10,6 @@
   },
   "plugins": [
     {
-      "name": "ui-ux-pro-max",
-      "description": "UI/UX Design Intelligence",
-      "source": "./skills/ui-ux-pro-max",
-      "strict": false,
-      "skills": ["./SKILL.md"]
-    },
-    {
       "name": "xlsx",
       "description": "Excel Spreadsheet Processing",
       "source": "./skills/xlsx",
@@ -101,58 +94,58 @@
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "youtube-transcript",
+      "name": "lixw-youtube-transcript",
       "description": "Downloads YouTube video transcripts/subtitles and cover images by URL or video ID. Supports multiple languages, translation, chapters, and speaker identification.",
-      "source": "./skills/youtube-transcript",
+      "source": "./skills/lixw-youtube-transcript",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "fal-image",
+      "name": "lixw-fal-image",
       "description": "Generate images using fal.ai API with GPT Image 1/1.5 and Nano Banana 2 models",
-      "source": "./skills/fal-image",
+      "source": "./skills/lixw-fal-image",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "article-illustrator",
+      "name": "lixw-article-illustrator",
       "description": "Analyzes article structure, identifies positions requiring visual aids, generates illustrations with Type x Style approach",
-      "source": "./skills/article-illustrator",
+      "source": "./skills/lixw-article-illustrator",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "comic",
+      "name": "lixw-comic",
       "description": "Knowledge comic creator supporting multiple art styles and tones with detailed panel layouts",
-      "source": "./skills/comic",
+      "source": "./skills/lixw-comic",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "compress-image",
+      "name": "lixw-compress-image",
       "description": "Compresses images to WebP or PNG with automatic tool selection",
-      "source": "./skills/compress-image",
+      "source": "./skills/lixw-compress-image",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "cover-image",
+      "name": "lixw-cover-image",
       "description": "Generates article cover images with 5-dimensional customization (type, palette, rendering, text, mood)",
-      "source": "./skills/cover-image",
+      "source": "./skills/lixw-cover-image",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "translate",
+      "name": "lixw-translate",
       "description": "Translates articles and documents between languages with quick, normal, and refined modes",
-      "source": "./skills/translate",
+      "source": "./skills/lixw-translate",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "format-markdown",
+      "name": "lixw-format-markdown",
       "description": "Formats plain text or markdown files with frontmatter, titles, summaries, headings, and code blocks",
-      "source": "./skills/format-markdown",
+      "source": "./skills/lixw-format-markdown",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
