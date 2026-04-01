@@ -29,19 +29,19 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[cover-image](./skills/cover-image)**               | Cover Image Generator          | 5-dimension customization, 10 palettes, 7 rendering styles                    |
 | **[translate](./skills/translate)**                   | Document Translator            | Quick/normal/refined modes, custom glossaries, terminology consistency          |
 | **[format-markdown](./skills/format-markdown)**       | Markdown Formatter             | Frontmatter, headings, bold, lists, code blocks, formatted output              |
-| **[ljg-paper](./skills/ljg-paper)**                   | Paper Reader                   | Extract ideas from research papers, non-academic focus, arxiv/PDF support      |
-| **[ljg-invest](./skills/ljg-invest)**                 | Investment Analyzer            | Deep investment analysis, order-creation evaluation, founder interview analysis |
-| **[ljg-learn](./skills/ljg-learn)**                   | Concept Anatomist              | 8 exploration dimensions, dialectics, phenomenology, epiphany compression      |
-| **[ljg-relationship](./skills/ljg-relationship)**     | Relationship Analyst           | 5-layer structural diagnostics, psychoanalytic depth, transference patterns    |
-| **[ljg-roundtable](./skills/ljg-roundtable)**         | Roundtable Discussion          | Truth-seeking moderator, multi-perspective debate, dialectical framework       |
-| **[ljg-travel](./skills/ljg-travel)**                 | Travel Researcher              | Museum & architecture research, knowledge docs, portable reference cards       |
-| **[ljg-writes](./skills/ljg-writes)**                 | Writing Engine                 | Develop ideas through writing, structured thinking process                     |
-| **[ljg-card](./skills/ljg-card)**                     | Content Caster                 | 6 mold types (long card, infograph, comic, whiteboard, etc.), PNG output       |
-| **[ljg-paper-flow](./skills/ljg-paper-flow)**         | Paper Workflow                 | Read papers + cast cards in one go, batch arxiv/PDF processing                 |
-| **[ljg-x-download](./skills/ljg-x-download)**         | X/Twitter Media Downloader     | Download images and videos from X/Twitter posts                                |
-| **[ljg-fomo](./skills/ljg-fomo)**                     | FOMO Killer                    | Kill tech FOMO in 10 min, structured knowledge note + summary card             |
-| **[ljg-preface](./skills/ljg-preface)**               | Recommendation Preface         | Standalone essay with hook opening, opinion-first, seamless quote integration  |
-| **[ljg-arrow](./skills/ljg-arrow)**                   | Root-Tracing Arrow             | Vertical drilling from surface to bedrock, layer by layer to irreducible truth |
+| **[lixw-paper](./skills/lixw-paper)**                   | Paper Reader                   | Extract ideas from research papers, non-academic focus, arxiv/PDF support      |
+| **[lixw-invest](./skills/lixw-invest)**                 | Investment Analyzer            | Deep investment analysis, order-creation evaluation, founder interview analysis |
+| **[lixw-learn](./skills/lixw-learn)**                   | Concept Anatomist              | 8 exploration dimensions, dialectics, phenomenology, epiphany compression      |
+| **[lixw-relationship](./skills/lixw-relationship)**     | Relationship Analyst           | 5-layer structural diagnostics, psychoanalytic depth, transference patterns    |
+| **[lixw-roundtable](./skills/lixw-roundtable)**         | Roundtable Discussion          | Truth-seeking moderator, multi-perspective debate, dialectical framework       |
+| **[lixw-travel](./skills/lixw-travel)**                 | Travel Researcher              | Museum & architecture research, knowledge docs, portable reference cards       |
+| **[lixw-writes](./skills/lixw-writes)**                 | Writing Engine                 | Develop ideas through writing, structured thinking process                     |
+| **[lixw-card](./skills/lixw-card)**                     | Content Caster                 | 6 mold types (long card, infograph, comic, whiteboard, etc.), PNG output       |
+| **[lixw-paper-flow](./skills/lixw-paper-flow)**         | Paper Workflow                 | Read papers + cast cards in one go, batch arxiv/PDF processing                 |
+| **[lixw-x-download](./skills/lixw-x-download)**         | X/Twitter Media Downloader     | Download images and videos from X/Twitter posts                                |
+| **[lixw-fomo](./skills/lixw-fomo)**                     | FOMO Killer                    | Kill tech FOMO in 10 min, structured knowledge note + summary card             |
+| **[lixw-preface](./skills/lixw-preface)**               | Recommendation Preface         | Standalone essay with hook opening, opinion-first, seamless quote integration  |
+| **[lixw-arrow](./skills/lixw-arrow)**                   | Root-Tracing Arrow             | Vertical drilling from surface to bedrock, layer by layer to irreducible truth |
 
 ## Quick Start
 

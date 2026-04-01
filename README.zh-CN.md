@@ -29,19 +29,19 @@
 | **[cover-image](./skills/cover-image)**               | 封面图生成器       | 5 维定制、10 种配色、7 种渲染风格                              |
 | **[translate](./skills/translate)**                   | 文档翻译器         | 快翻/普通/精翻三种模式、自定义术语表、术语一致性               |
 | **[format-markdown](./skills/format-markdown)**       | Markdown 格式化    | 前置元数据、标题、加粗、列表、代码块、格式化输出               |
-| **[ljg-paper](./skills/ljg-paper)**                   | 论文阅读器         | 提取论文核心思想、非学术视角、支持 arxiv/PDF                   |
-| **[ljg-invest](./skills/ljg-invest)**                 | 投资分析器         | 深度投资分析、秩序创造机器评估、创始人访谈分析                 |
-| **[ljg-learn](./skills/ljg-learn)**                   | 概念解剖器         | 8 维探索、辩证法、现象学、顿悟压缩                             |
-| **[ljg-relationship](./skills/ljg-relationship)**     | 关系分析器         | 5 层结构诊断、精神分析、移情模式识别                           |
-| **[ljg-roundtable](./skills/ljg-roundtable)**         | 圆桌讨论           | 求真主持人、多视角辩论、辩证框架                               |
-| **[ljg-travel](./skills/ljg-travel)**                 | 旅行研究器         | 博物馆与古建研究、知识文档、便携参考卡                         |
-| **[ljg-writes](./skills/ljg-writes)**                 | 写作引擎           | 在写作过程中发展想法、结构化思考                               |
-| **[ljg-card](./skills/ljg-card)**                     | 内容铸造器         | 6 种模具（长卡、信息图、漫画、白板等）、PNG 输出               |
-| **[ljg-paper-flow](./skills/ljg-paper-flow)**         | 论文工作流         | 读论文 + 做卡片一条龙、批量 arxiv/PDF 处理                    |
-| **[ljg-x-download](./skills/ljg-x-download)**         | X/推特媒体下载     | 下载 X/Twitter 帖子中的图片和视频                              |
-| **[ljg-fomo](./skills/ljg-fomo)**                     | FOMO 杀手          | 10 分钟消灭技术焦虑、结构化知识笔记 + 速览卡片                |
-| **[ljg-preface](./skills/ljg-preface)**               | 推荐序             | 独立成篇、钩子开篇、观点先行、金句无痕融入                    |
-| **[ljg-arrow](./skills/ljg-arrow)**                   | 追本之箭           | 纵向深钻、逐层追问到不可再分的基岩                             |
+| **[lixw-paper](./skills/lixw-paper)**                   | 论文阅读器         | 提取论文核心思想、非学术视角、支持 arxiv/PDF                   |
+| **[lixw-invest](./skills/lixw-invest)**                 | 投资分析器         | 深度投资分析、秩序创造机器评估、创始人访谈分析                 |
+| **[lixw-learn](./skills/lixw-learn)**                   | 概念解剖器         | 8 维探索、辩证法、现象学、顿悟压缩                             |
+| **[lixw-relationship](./skills/lixw-relationship)**     | 关系分析器         | 5 层结构诊断、精神分析、移情模式识别                           |
+| **[lixw-roundtable](./skills/lixw-roundtable)**         | 圆桌讨论           | 求真主持人、多视角辩论、辩证框架                               |
+| **[lixw-travel](./skills/lixw-travel)**                 | 旅行研究器         | 博物馆与古建研究、知识文档、便携参考卡                         |
+| **[lixw-writes](./skills/lixw-writes)**                 | 写作引擎           | 在写作过程中发展想法、结构化思考                               |
+| **[lixw-card](./skills/lixw-card)**                     | 内容铸造器         | 6 种模具（长卡、信息图、漫画、白板等）、PNG 输出               |
+| **[lixw-paper-flow](./skills/lixw-paper-flow)**         | 论文工作流         | 读论文 + 做卡片一条龙、批量 arxiv/PDF 处理                    |
+| **[lixw-x-download](./skills/lixw-x-download)**         | X/推特媒体下载     | 下载 X/Twitter 帖子中的图片和视频                              |
+| **[lixw-fomo](./skills/lixw-fomo)**                     | FOMO 杀手          | 10 分钟消灭技术焦虑、结构化知识笔记 + 速览卡片                |
+| **[lixw-preface](./skills/lixw-preface)**               | 推荐序             | 独立成篇、钩子开篇、观点先行、金句无痕融入                    |
+| **[lixw-arrow](./skills/lixw-arrow)**                   | 追本之箭           | 纵向深钻、逐层追问到不可再分的基岩                             |
 
 ## 快速开始
 

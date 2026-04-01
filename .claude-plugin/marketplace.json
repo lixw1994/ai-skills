@@ -157,93 +157,93 @@
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-paper",
+      "name": "lixw-paper",
       "description": "Paper reader for non-academics, extracts ideas from research papers for personal use",
-      "source": "./skills/ljg-paper",
+      "source": "./skills/lixw-paper",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-invest",
+      "name": "lixw-invest",
       "description": "Investment analysis report generator, evaluates whether a project is an order-creating machine",
-      "source": "./skills/ljg-invest",
+      "source": "./skills/lixw-invest",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-learn",
+      "name": "lixw-learn",
       "description": "Deep concept anatomist, deconstructs concepts through 8 exploration dimensions",
-      "source": "./skills/ljg-learn",
+      "source": "./skills/lixw-learn",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-relationship",
+      "name": "lixw-relationship",
       "description": "Relationship analyst combining structural diagnostics with psychoanalytic depth",
-      "source": "./skills/ljg-relationship",
+      "source": "./skills/lixw-relationship",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-roundtable",
+      "name": "lixw-roundtable",
       "description": "Structured roundtable discussion framework with multi-perspective dialectical debate",
-      "source": "./skills/ljg-roundtable",
+      "source": "./skills/lixw-roundtable",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-travel",
+      "name": "lixw-travel",
       "description": "Deep travel research for museums and ancient architecture, generates knowledge docs and reference cards",
-      "source": "./skills/ljg-travel",
+      "source": "./skills/lixw-travel",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-writes",
+      "name": "lixw-writes",
       "description": "Writing engine that develops ideas through the process of writing",
-      "source": "./skills/ljg-writes",
+      "source": "./skills/lixw-writes",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-card",
+      "name": "lixw-card",
       "description": "Content caster that transforms content into PNG visuals with 6 mold types",
-      "source": "./skills/ljg-card",
+      "source": "./skills/lixw-card",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-paper-flow",
+      "name": "lixw-paper-flow",
       "description": "Paper workflow: read papers and cast cards in one go",
-      "source": "./skills/ljg-paper-flow",
+      "source": "./skills/lixw-paper-flow",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-x-download",
+      "name": "lixw-x-download",
       "description": "Download images and videos from X (Twitter) posts",
-      "source": "./skills/ljg-x-download",
+      "source": "./skills/lixw-x-download",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-fomo",
+      "name": "lixw-fomo",
       "description": "Tech trend research workflow — kill FOMO in 10 minutes with structured knowledge note and summary card",
-      "source": "./skills/ljg-fomo",
+      "source": "./skills/lixw-fomo",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-preface",
+      "name": "lixw-preface",
       "description": "Recommendation preface writer — standalone 400-600 word essay with hook opening and seamless quote integration",
-      "source": "./skills/ljg-preface",
+      "source": "./skills/lixw-preface",
       "strict": false,
       "skills": ["./SKILL.md"]
     },
     {
-      "name": "ljg-arrow",
+      "name": "lixw-arrow",
       "description": "Root-tracing arrow — drills vertically from surface to irreducible essence, layer by layer",
-      "source": "./skills/ljg-arrow",
+      "source": "./skills/lixw-arrow",
       "strict": false,
       "skills": ["./SKILL.md"]
     }
