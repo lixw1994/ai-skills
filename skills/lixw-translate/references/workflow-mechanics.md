@@ -6,19 +6,19 @@ Details for source materialization, output directory creation, and conflict reso
 
 | Input Type | Action |
 |------------|--------|
-| File | Use as-is (no copy needed) |
-| Inline text | Save to `translate/{slug}.md` |
-| URL | Fetch content, save to `translate/{slug}.md` |
+| File | Copy to `{source-dir}/{slug}/source.md` |
+| Inline text | Save to `translate/{slug}/source.md` |
+| URL | Fetch content, save to `translate/{slug}/source.md` |
 
 `{slug}`: 2-4 word kebab-case slug derived from content topic.
 
 ## Create Output Directory
 
-Create a subdirectory next to the source file: `{source-dir}/{source-basename}-{target-lang}/`
+Output directory is a language subdirectory under `{slug}/`: `{slug}/{target-lang}/`
 
 Examples:
-- `posts/article.md` → `posts/article-zh/`
-- `translate/ai-future.md` → `translate/ai-future-zh/`
+- URL input → `translate/ai-future/source.md` + `translate/ai-future/zh-CN/`
+- File `posts/article.md` → `posts/article/source.md` + `posts/article/zh-CN/`
 
 ## Conflict Resolution
 

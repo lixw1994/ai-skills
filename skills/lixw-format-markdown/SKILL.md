@@ -1,6 +1,6 @@
 ---
 name: lixw-format-markdown
-description: Formats plain text or markdown files with frontmatter, titles, summaries, headings, bold, lists, and code blocks. Use when user asks to "format markdown", "beautify article", "add formatting", or improve article layout. Outputs to {filename}-formatted.md.
+description: Formats plain text or markdown files with frontmatter, titles, summaries, headings, bold, lists, and code blocks. Use when user asks to "format markdown", "beautify article", "add formatting", or improve article layout. Outputs to {slug}/formatted.md.
 ---
 
 # Markdown Formatter
@@ -88,12 +88,12 @@ Detected existing markdown formatting. What would you like to do?
 1. Optimize formatting (Recommended)
    - Analyze content, improve headings, bold, lists for readability
    - Run typography script (spacing, emphasis fixes)
-   - Output: {filename}-formatted.md
+   - Output: {slug}/formatted.md
 
 2. Keep original formatting
    - Preserve existing markdown structure
    - Run typography script only
-   - Output: {filename}-formatted.md
+   - Output: {slug}/formatted.md
 
 3. Typography fixes only
    - Run typography script on original file in-place
@@ -134,7 +134,7 @@ Produce an analysis covering these dimensions:
 - Code, commands, or technical terms not marked as code
 - Obvious typos or formatting errors
 
-**Save analysis to file**: `{original-filename}-analysis.md`
+**Save analysis to file**: `{slug}/analysis.md`
 
 The analysis file serves as the blueprint for Step 3. Use this format:
 
@@ -262,16 +262,21 @@ Apply formatting guided by the Step 2 analysis. The goal is making the content s
 - Use blockquotes for golden quotes, memorable statements, or important warnings
 - Fix obvious typos (based on Step 2 findings)
 
-### Step 5: Save Formatted File
+### Step 5: Create Output Directory & Save
 
-Save as `{original-filename}-formatted.md`
+Create output directory `{source-dir}/{slug}/` (where `{slug}` is the source filename without extension). Copy the original source file to `{slug}/source.md`, then save the formatted result to `{slug}/formatted.md`.
 
-**Backup existing file:**
+**Conflict resolution:** If the output directory already exists, rename it to `{slug}.backup-YYYYMMDD-HHMMSS/` before creating the new one.
 
 ```bash
-if [ -f "{filename}-formatted.md" ]; then
-  mv "{filename}-formatted.md" "{filename}-formatted.backup-$(date +%Y%m%d-%H%M%S).md"
+slug="{source-filename-without-ext}"
+outdir="{source-dir}/${slug}"
+if [ -d "${outdir}" ]; then
+  mv "${outdir}" "${outdir}.backup-$(date +%Y%m%d-%H%M%S)"
 fi
+mkdir -p "${outdir}"
+cp "{source-file}" "${outdir}/source.md"
+# then write formatted content to ${outdir}/formatted.md
 ```
 
 ### Step 6: Execute Typography Script
@@ -279,7 +284,7 @@ fi
 Run the formatting script on the output file:
 
 ```bash
-${BUN_X} {baseDir}/scripts/main.ts {output-file-path} [options]
+${BUN_X} {baseDir}/scripts/main.ts {slug}/formatted.md [options]
 ```
 
 **Script Options:**
@@ -320,8 +325,9 @@ Display a report summarizing all changes made:
 **Formatting Complete**
 
 **Files:**
-- Analysis: {filename}-analysis.md
-- Formatted: {filename}-formatted.md
+- Source: {slug}/source.md
+- Analysis: {slug}/analysis.md
+- Formatted: {slug}/formatted.md
 
 **Content Analysis Summary:**
 - Highlights found: X key insights

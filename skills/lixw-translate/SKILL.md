@@ -143,7 +143,7 @@ Custom audience descriptions are also accepted, e.g., `--audience "AI感兴趣�
 
 ### Step 2: Materialize Source & Create Output Directory
 
-Materialize source (file as-is, inline text/URL → save to `translate/{slug}.md`), then create output directory: `{source-dir}/{source-basename}-{target-lang}/`. Detect source language if `--from` not specified.
+Materialize source into `{slug}/source.md` (file input → `{source-dir}/{slug}/`; inline/URL → `translate/{slug}/`), then create output directory: `{slug}/{target-lang}/`. Detect source language if `--from` not specified.
 
 Full details: [references/workflow-mechanics.md](references/workflow-mechanics.md)
 
