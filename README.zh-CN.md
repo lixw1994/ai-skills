@@ -41,6 +41,7 @@
 | **[lixw-fomo](./skills/lixw-fomo)**                     | FOMO 杀手          | 10 分钟消灭技术焦虑、结构化知识笔记 + 速览卡片                |
 | **[lixw-preface](./skills/lixw-preface)**               | 推荐序             | 独立成篇、钩子开篇、观点先行、金句无痕融入                    |
 | **[lixw-arrow](./skills/lixw-arrow)**                   | 追本之箭           | 纵向深钻、逐层追问到不可再分的基岩                             |
+| **[lixw-market-research](./skills/lixw-market-research)** | 市场调研分析器   | 痛点分级诊断、替代方案矩阵、ROI 三场景推演、外部视角校准        |
 
 ## 快速开始
 

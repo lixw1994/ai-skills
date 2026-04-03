@@ -239,6 +239,13 @@
       "source": "./skills/lixw-arrow",
       "strict": false,
       "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "lixw-market-research",
+      "description": "Market research analyst — evaluates whether a product is worth building with pain-level diagnosis, competitive matrix, ROI scenarios, and outside insight calibration",
+      "source": "./skills/lixw-market-research",
+      "strict": false,
+      "skills": ["./SKILL.md"]
     }
   ]
 }

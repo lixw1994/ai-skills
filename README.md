@@ -41,6 +41,7 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[lixw-fomo](./skills/lixw-fomo)**                     | FOMO Killer                    | Kill tech FOMO in 10 min, structured knowledge note + summary card             |
 | **[lixw-preface](./skills/lixw-preface)**               | Recommendation Preface         | Standalone essay with hook opening, opinion-first, seamless quote integration  |
 | **[lixw-arrow](./skills/lixw-arrow)**                   | Root-Tracing Arrow             | Vertical drilling from surface to bedrock, layer by layer to irreducible truth |
+| **[lixw-market-research](./skills/lixw-market-research)** | Market Research Analyst      | Pain-level diagnosis, competitive matrix, ROI three-scenario model, outside insight calibration |
 
 ## Quick Start
 
