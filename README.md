@@ -42,6 +42,8 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[lixw-preface](./skills/lixw-preface)**               | Recommendation Preface         | Standalone essay with hook opening, opinion-first, seamless quote integration  |
 | **[lixw-arrow](./skills/lixw-arrow)**                   | Root-Tracing Arrow             | Vertical drilling from surface to bedrock, layer by layer to irreducible truth |
 | **[lixw-market-research](./skills/lixw-market-research)** | Market Research Analyst      | Pain-level diagnosis, competitive matrix, ROI three-scenario model, outside insight calibration |
+| **[lixw-research](./skills/lixw-research)**              | Deep Researcher                | Comprehensive picture of person/event/topic, timeline, key players, multi-perspective analysis   |
+| **[lixw-fact-check](./skills/lixw-fact-check)**          | Fact Checker                   | Claim verification, source tracing, evidence grading, 6-level verdict, one-line summary          |
 
 ## Quick Start
 

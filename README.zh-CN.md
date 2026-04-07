@@ -42,6 +42,8 @@
 | **[lixw-preface](./skills/lixw-preface)**               | 推荐序             | 独立成篇、钩子开篇、观点先行、金句无痕融入                    |
 | **[lixw-arrow](./skills/lixw-arrow)**                   | 追本之箭           | 纵向深钻、逐层追问到不可再分的基岩                             |
 | **[lixw-market-research](./skills/lixw-market-research)** | 市场调研分析器   | 痛点分级诊断、替代方案矩阵、ROI 三场景推演、外部视角校准        |
+| **[lixw-research](./skills/lixw-research)**              | 深度调研器       | 人物/事件/话题全景画像、时间线、关键角色、因果链、多视角分析     |
+| **[lixw-fact-check](./skills/lixw-fact-check)**          | 事实核查器       | 说法真伪判定、信源追溯、证据分级、六级判定、一句话结论           |
 
 ## 快速开始
 

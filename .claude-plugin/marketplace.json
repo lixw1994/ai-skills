@@ -246,6 +246,20 @@
       "source": "./skills/lixw-market-research",
       "strict": false,
       "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "lixw-research",
+      "description": "Deep research and summary — assembles a comprehensive picture of a person, event, history, or topic with timeline, key players, causal chains, and multi-perspective analysis",
+      "source": "./skills/lixw-research",
+      "strict": false,
+      "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "lixw-fact-check",
+      "description": "Fact-check verdict on a specific claim, news headline, or rumor — source tracing, evidence grading, and 6-level verdict with one-line summary",
+      "source": "./skills/lixw-fact-check",
+      "strict": false,
+      "skills": ["./SKILL.md"]
     }
   ]
 }
