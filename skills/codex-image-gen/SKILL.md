@@ -32,7 +32,7 @@ Note: `-s workspace-write` writes the generated PNG into the working tree. If yo
 ```bash
 codex exec \
   -m gpt-5.5 \
-  -c model_reasoning_effort="high" \
+  -c model_reasoning_effort="medium" \
   -s workspace-write \
   --skip-git-repo-check \
   "Use your image generation tool to generate <DESCRIPTION>. \
@@ -41,7 +41,7 @@ Save the generated image into this working directory and tell me the exact file 
 
 - Replace `<DESCRIPTION>` with a detailed prompt (subject, style, framing, e.g. "a cute photorealistic orange tabby cat sitting, looking at camera").
 - `-s workspace-write` lets it save the file into the working tree. Add `-C <dir>` to set a specific output dir (defaults to the current directory).
-- Run with a generous timeout (~300s) — high reasoning + image gen is slow.
+- Run with a generous timeout (~300s) — image generation is slow.
 
 ## Controlling size / aspect / quality
 
@@ -49,7 +49,7 @@ There are **no CLI flags** for image size, aspect ratio, or quality — `codex e
 
 - **Pixel size** — "The output MUST be exactly 1024x1024 pixels." (Tested: honored exactly; the model even self-verifies dimensions.) The underlying tool works in a fixed set of sizes (square `1024x1024`, portrait `1024x1536`, landscape `1536x1024`); odd requests get mapped to the nearest supported size, so treat exact pixels as best-effort.
 - **Aspect ratio** — "square / 16:9 widescreen / portrait / vertical poster."
-- **Quality & detail** — "high detail, photorealistic, sharp focus" vs "simple flat minimalist." (`-c model_reasoning_effort="high"` improves the model's *planning*, not pixel fidelity — keep it high anyway.)
+- **Quality & detail** — "high detail, photorealistic, sharp focus" vs "simple flat minimalist." (`-c model_reasoning_effort="medium"` is a fine default — reasoning effort improves the model's *planning*, not pixel fidelity.)
 - **Background / format** — "transparent background", "white background", "PNG".
 
 So: bake size/aspect/quality requirements into `<DESCRIPTION>` rather than looking for flags.
