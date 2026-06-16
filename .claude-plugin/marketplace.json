@@ -260,6 +260,13 @@
       "source": "./skills/lixw-fact-check",
       "strict": false,
       "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "codex-image-gen",
+      "description": "Generate images via the codex CLI using GPT-5.5's built-in image-generation tool",
+      "source": "./skills/codex-image-gen",
+      "strict": false,
+      "skills": ["./SKILL.md"]
     }
   ]
 }
