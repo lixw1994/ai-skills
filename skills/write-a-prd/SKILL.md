@@ -9,15 +9,27 @@ This skill will be invoked when the user wants to create a PRD. You may skip ste
 
 2. Explore the repo to verify their assertions and understand the current state of the codebase.
 
-3. Interview the user relentlessly about every aspect of this plan until you reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one.
+3. Interview the user about every aspect of this plan until you reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one. Ask one question per message and prefer multiple-choice when possible — a focused interview beats a barrage.
 
-4. Sketch out the major modules you will need to build or modify to complete the implementation. Actively look for opportunities to extract deep modules that can be tested in isolation.
+   If the request describes multiple independent subsystems, flag this before going deep. Help the user decompose into separate PRDs rather than refining details of a project that needs to be split first.
+
+4. Propose 2–3 approaches with their trade-offs and lead with your recommendation. Wait for the user to pick one before moving on to module design.
+
+5. Sketch out the major modules you will need to build or modify to complete the implementation. Actively look for opportunities to extract deep modules that can be tested in isolation.
 
 A deep module (as opposed to a shallow module) is one which encapsulates a lot of functionality in a simple, testable interface which rarely changes.
 
 Check with the user that these modules match their expectations. Check with the user which modules they want tests written for.
 
-5. Once you have a complete understanding of the problem and solution, use the template below to write the PRD. Save the PRD as a markdown file in the `prd/` directory at the project root (create the directory if it doesn't exist). Use a descriptive filename like `prd/<feature-name>.md`.
+6. Once you have a complete understanding of the problem and solution, use the template below to write the PRD. Save the PRD as a markdown file in the `prd/` directory at the project root (create the directory if it doesn't exist). Use a descriptive filename like `prd/<feature-name>.md`.
+
+7. After writing the PRD, do a quick self-review and fix issues inline:
+   - Placeholders / TBD / TODO left behind
+   - Sections that contradict each other
+   - Requirements that could be read two ways
+   - Scope that grew large enough to need decomposition
+
+8. Tell the user the PRD is saved to `<path>` and ask them to review before considering it done. Wait for their response; if they request changes, apply them and re-run the self-review.
 
 <prd-template>
 
