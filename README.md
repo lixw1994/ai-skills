@@ -44,6 +44,7 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[lixw-market-research](./skills/lixw-market-research)** | Market Research Analyst      | Pain-level diagnosis, competitive matrix, ROI three-scenario model, outside insight calibration |
 | **[lixw-research](./skills/lixw-research)**              | Deep Researcher                | Comprehensive picture of person/event/topic, timeline, key players, multi-perspective analysis   |
 | **[lixw-fact-check](./skills/lixw-fact-check)**          | Fact Checker                   | Claim verification, source tracing, evidence grading, 6-level verdict, one-line summary          |
+| **[codex-image-gen](./skills/codex-image-gen)**          | Codex Image Generator          | Generate images via codex CLI (GPT-5.5), size/aspect via prompt, reference-image editing         |
 
 ## Quick Start
 

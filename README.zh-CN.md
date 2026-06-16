@@ -44,6 +44,7 @@
 | **[lixw-market-research](./skills/lixw-market-research)** | 市场调研分析器   | 痛点分级诊断、替代方案矩阵、ROI 三场景推演、外部视角校准        |
 | **[lixw-research](./skills/lixw-research)**              | 深度调研器       | 人物/事件/话题全景画像、时间线、关键角色、因果链、多视角分析     |
 | **[lixw-fact-check](./skills/lixw-fact-check)**          | 事实核查器       | 说法真伪判定、信源追溯、证据分级、六级判定、一句话结论           |
+| **[codex-image-gen](./skills/codex-image-gen)**          | Codex 图片生成器 | 通过 codex CLI（GPT-5.5）生成图片、用提示词控制尺寸/比例、参考图编辑 |
 
 ## 快速开始
 
