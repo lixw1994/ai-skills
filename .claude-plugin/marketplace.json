@@ -267,6 +267,13 @@
       "source": "./skills/codex-image-gen",
       "strict": false,
       "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "handoff",
+      "description": "Compact the current conversation into a handoff document for another agent to continue the work",
+      "source": "./skills/handoff",
+      "strict": false,
+      "skills": ["./SKILL.md"]
     }
   ]
 }

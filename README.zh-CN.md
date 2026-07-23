@@ -45,6 +45,7 @@
 | **[lixw-research](./skills/lixw-research)**              | 深度调研器       | 人物/事件/话题全景画像、时间线、关键角色、因果链、多视角分析     |
 | **[lixw-fact-check](./skills/lixw-fact-check)**          | 事实核查器       | 说法真伪判定、信源追溯、证据分级、六级判定、一句话结论           |
 | **[codex-image-gen](./skills/codex-image-gen)**          | Codex 图片生成器 | 通过 codex CLI（GPT-5.5）生成图片、用提示词控制尺寸/比例、参考图编辑 |
+| **[handoff](./skills/handoff)**                          | 对话交接        | 将当前对话压缩为交接文档，供其他 Agent 继续工作                    |
 
 ## 快速开始
 

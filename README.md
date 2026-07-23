@@ -45,6 +45,7 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[lixw-research](./skills/lixw-research)**              | Deep Researcher                | Comprehensive picture of person/event/topic, timeline, key players, multi-perspective analysis   |
 | **[lixw-fact-check](./skills/lixw-fact-check)**          | Fact Checker                   | Claim verification, source tracing, evidence grading, 6-level verdict, one-line summary          |
 | **[codex-image-gen](./skills/codex-image-gen)**          | Codex Image Generator          | Generate images via codex CLI (GPT-5.5), size/aspect via prompt, reference-image editing         |
+| **[handoff](./skills/handoff)**                          | Conversation Handoff            | Compact the current conversation into a handoff document for another agent                   |
 
 ## Quick Start
 
