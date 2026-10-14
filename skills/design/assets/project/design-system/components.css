@@ -1,0 +1,134 @@
+/* Default controls. Values come from tokens.css; see README.md for design sources. */
+:root {
+  color-scheme: light;
+  font-optical-sizing: auto;
+}
+[data-ds-theme="dark"] {
+  color-scheme: dark;
+}
+.ds-button {
+  font-family: var(--ds-body-font-family);
+  font-size: max(1rem, var(--ds-body-font-size));
+  font-weight: 500;
+  line-height: 1.4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ds-space-2);
+  min-height: 2.75rem;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  padding: 0.625rem 1rem;
+  border: 1px solid transparent;
+  border-radius: var(--ds-radius-md);
+  background: var(--ds-primary);
+  color: var(--ds-on-primary);
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 100ms ease-out, background-color 150ms ease, box-shadow 150ms ease;
+}
+.ds-button:hover:not(:disabled) {
+  filter: brightness(0.94);
+}
+.ds-button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+.ds-button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.ds-button:focus-visible,
+.ds-input:focus-visible,
+.ds-tab:focus-visible {
+  outline: 2px solid var(--ds-ring);
+  outline-offset: 3px;
+}
+.ds-button.secondary {
+  background: var(--ds-surface);
+  color: var(--ds-ink);
+  border-color: var(--ds-ring);
+}
+.ds-panel {
+  background: var(--ds-surface);
+  color: var(--ds-ink);
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius-lg);
+  padding: 1.5rem;
+}
+.ds-input {
+  font: inherit;
+  min-height: 2.75rem;
+  border: 1px solid var(--ds-muted);
+  background: var(--ds-surface);
+  color: var(--ds-ink);
+  padding: 0.625rem 1rem;
+  border-radius: var(--ds-radius-md);
+}
+.ds-tab {
+  font: inherit;
+  min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: var(--ds-radius-md);
+  background: transparent;
+  color: var(--ds-muted);
+  cursor: pointer;
+  transition: transform 100ms ease-out, background-color 150ms ease;
+}
+.ds-tab.active,
+.ds-tab[aria-pressed="true"] {
+  background: var(--ds-primary-soft);
+  color: var(--ds-primary);
+  border-color: var(--ds-ring);
+}
+.ds-tab:active:not(:disabled) {
+  transform: scale(0.97);
+}
+.ds-toolbar {
+  background: var(--ds-surface);
+  color: var(--ds-ink);
+  border-bottom: 1px solid var(--ds-border);
+}
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  .ds-toolbar {
+    background: color-mix(in srgb, var(--ds-surface) 88%, transparent);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ds-button,
+  .ds-tab {
+    transition: none;
+  }
+  .ds-button:active:not(:disabled),
+  .ds-tab:active:not(:disabled) {
+    transform: none;
+  }
+}
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  .ds-toolbar {
+    background: var(--ds-surface);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+@media (prefers-contrast: more) {
+  .ds-panel,
+  .ds-input,
+  .ds-button.secondary {
+    border-color: var(--ds-ink);
+  }
+}
+@media (forced-colors: active) {
+  .ds-button,
+  .ds-input,
+  .ds-tab,
+  .ds-panel {
+    border-color: ButtonText;
+  }
+  .ds-tab[aria-pressed="true"] {
+    outline: 2px solid Highlight;
+    outline-offset: -3px;
+  }
+}

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Design · Design system</title>
+    <script>
+      const appearance = matchMedia("(prefers-color-scheme: dark)");
+      document.documentElement.dataset.dsTheme = appearance.matches ? "dark" : "light";
+    </script>
+    <link href="tokens.css" rel="stylesheet" />
+    <link href="components.css" rel="stylesheet" />
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--ds-background);
+        color: var(--ds-ink);
+        font: var(--ds-body-font-weight) max(1rem, var(--ds-body-font-size)) /
+          var(--ds-body-line-height) var(--ds-body-font-family);
+      }
+      .ds-toolbar { position: sticky; top: 0; z-index: 1; }
+      .toolbar-content {
+        max-width: 64rem;
+        margin: auto;
+        padding: 0.75rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      .toolbar-content strong { font-size: 0.9375rem; font-weight: 600; }
+      .appearance {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        gap: 0.25rem;
+        padding: 0.25rem;
+        border: 1px solid var(--ds-border);
+        border-radius: 1rem;
+      }
+      main { max-width: 64rem; margin: auto; padding: 4rem 2rem; }
+      .eyebrow { color: var(--ds-muted); font-size: 0.875rem; font-weight: 500; }
+      h1 {
+        margin: 0.75rem 0 1rem;
+        font: var(--ds-display-font-weight) clamp(2rem, 5vw, 3rem) /
+          var(--ds-display-line-height) var(--ds-display-font-family);
+        letter-spacing: -0.03em;
+        text-wrap: balance;
+      }
+      h2 { margin: 3rem 0 1.25rem; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.015em; }
+      p { color: var(--ds-muted); }
+      .intro { max-width: 36rem; }
+      .colors { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(8rem, 100%), 1fr)); gap: 1.25rem; }
+      .swatch { height: 4.5rem; border: 1px solid var(--ds-border); border-radius: var(--ds-radius-md); margin-bottom: 0.5rem; }
+      .item span { display: block; color: var(--ds-muted); font: 0.8125rem/1.5 var(--ds-code-font-family); margin-top: 0.25rem; }
+      .sample { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+      .display {
+        font: var(--ds-display-font-weight) clamp(1.75rem, 4vw, 2.25rem) /
+          var(--ds-display-line-height) var(--ds-display-font-family);
+        letter-spacing: -0.025em;
+        text-wrap: balance;
+      }
+      code { font: 0.8125rem/1.6 var(--ds-code-font-family); }
+      .field { margin-top: 1.5rem; }
+      .field label { display: block; margin-bottom: 0.5rem; font-size: 0.875rem; font-weight: 500; }
+      .ds-input { width: 100%; max-width: 24rem; }
+      #feedback { min-height: 1.5em; }
+      .note { margin-top: 3rem; border-top: 1px solid var(--ds-border); padding-top: 1.25rem; font-size: 0.8125rem; }
+      @media (max-width: 480px) {
+        .toolbar-content { padding-inline: 1.5rem; flex-wrap: wrap; }
+        main { padding: 2.5rem 1.5rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="ds-toolbar">
+      <div class="toolbar-content">
+        <strong>Design system</strong>
+        <div class="appearance" role="group" aria-label="Appearance">
+          <button class="ds-tab" data-theme="light" aria-pressed="true">Light</button>
+          <button class="ds-tab" data-theme="dark" aria-pressed="false">Dark</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <span class="eyebrow">The essentials</span>
+      <h1>Designed to feel natural.</h1>
+      <p class="intro">Clear type, room to breathe, and feedback that follows your touch.
+        One foundation for every screen.</p>
+      <section aria-labelledby="colors-title">
+        <h2 id="colors-title">Colors with a purpose</h2>
+        <div id="colors" class="colors"></div>
+      </section>
+      <section aria-labelledby="type-title">
+        <h2 id="type-title">A clear hierarchy</h2>
+        <div class="ds-panel">
+          <div class="display">A quieter place to focus.</div>
+          <p>A clear title. Supporting detail. One obvious next step.</p>
+          <code>System fonts. Familiar everywhere.</code>
+        </div>
+      </section>
+      <section aria-labelledby="controls-title">
+        <h2 id="controls-title">Controls that respond</h2>
+        <div class="sample">
+          <button class="ds-button" id="demo-action">Show feedback</button>
+          <button class="ds-button secondary" id="demo-reset">Reset</button>
+          <button class="ds-button" disabled>Unavailable</button>
+        </div>
+        <div class="field">
+          <label for="demo-input">Name</label>
+          <input class="ds-input" id="demo-input" placeholder="Try keyboard focus" autocomplete="off" />
+        </div>
+        <p id="feedback" role="status" aria-live="polite"></p>
+      </section>
+      <p class="note">Use the same colors and controls throughout your prototype.
+        Change the source tokens when your design needs a new direction.</p>
+    </main>
+    <script>
+      const labels = {
+        background: "Canvas", surface: "Surface", ink: "Body text", muted: "Secondary text",
+        border: "Divider", primary: "Primary action", "on-primary": "Button text",
+        "primary-soft": "Selected surface", accent: "Accent", ring: "Focus indicator",
+      };
+      let chosenTheme = null;
+      function renderColors() {
+        const colors = document.getElementById("colors");
+        colors.replaceChildren();
+        for (const [name, title] of Object.entries(labels)) {
+          const item = document.createElement("div");
+          item.className = "item";
+          const swatch = document.createElement("div");
+          swatch.className = "swatch";
+          swatch.style.background = "var(--ds-" + name + ")";
+          const label = document.createElement("div");
+          label.textContent = title;
+          const value = document.createElement("span");
+          value.textContent = getComputedStyle(document.documentElement).getPropertyValue("--ds-" + name).trim();
+          item.append(swatch, label, value);
+          colors.append(item);
+        }
+      }
+      function setTheme(theme) {
+        document.documentElement.dataset.dsTheme = theme;
+        document.querySelectorAll("[data-theme]").forEach(button =>
+          button.setAttribute("aria-pressed", String(button.dataset.theme === theme)));
+        renderColors();
+      }
+      document.querySelectorAll("[data-theme]").forEach(button => {
+        button.onclick = () => {
+          chosenTheme = button.dataset.theme;
+          setTheme(chosenTheme);
+          document.getElementById("feedback").textContent = button.textContent + " appearance selected.";
+        };
+      });
+      appearance.addEventListener("change", () => {
+        if (chosenTheme === null) setTheme(appearance.matches ? "dark" : "light");
+      });
+      setTheme(document.documentElement.dataset.dsTheme);
+      document.getElementById("demo-action").onclick = () =>
+        document.getElementById("feedback").textContent = "Ready when you are.";
+      document.getElementById("demo-reset").onclick = () => {
+        document.getElementById("demo-input").value = "";
+        document.getElementById("feedback").textContent = "Reset complete.";
+      };
+    </script>
+  </body>
+</html>

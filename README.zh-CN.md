@@ -8,6 +8,7 @@
 
 | Skill                                                             | 描述               | 关键能力                                                       |
 | ----------------------------------------------------------------- | ------------------ | -------------------------------------------------------------- |
+| **[design](./skills/design)**                                     | 界面与原型设计     | 设计系统、Clarity 聊天示例、iPhone/iPad/桌面预览                  |
 | **[xlsx](./skills/xlsx)**                                         | Excel 电子表格处理 | 创建、编辑、分析、公式计算、数据可视化                         |
 | **[ceo-advisor](./skills/ceo-advisor)**                           | CEO 执行领导力     | 战略分析器、财务建模、董事会治理、投资者关系                   |
 | **[cto-advisor](./skills/cto-advisor)**                           | CTO 技术领导力     | 技术债务分析、团队扩展、DORA 指标、ADR 模板                    |
@@ -48,6 +49,23 @@
 | **[handoff](./skills/handoff)**                          | 对话交接        | 将当前对话压缩为交接文档，供其他 Agent 继续工作                    |
 
 ## 快速开始
+
+### Design · Claude Code + Codex
+
+在目标项目目录运行，同时安装到 Claude Code 和 Codex：
+
+```bash
+npx skills add https://github.com/lixw1994/ai-skills --skill design --agent claude-code codex --copy --yes
+```
+
+Claude Code 用 `/design`，Codex 用 `$design`。在同一个 Agent 对话里创建网页并继续修改。可选的预览脚本需要 Node.js 20+。[预览用法](./skills/design/references/preview.md)。
+
+也可以通过 Claude Code marketplace 安装：
+
+```text
+/plugin marketplace add lixw1994/ai-skills
+/plugin install design@lixianwei-ai-skills
+```
 
 ### Claude Code
 

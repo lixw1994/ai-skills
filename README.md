@@ -8,6 +8,7 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 
 | Skill                                                             | Description                    | Key Features                                                           |
 | ----------------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------- |
+| **[design](./skills/design)**                                     | Interface & Prototype Design   | Design systems, Clarity chat prototype, iPhone/iPad/desktop previews      |
 | **[xlsx](./skills/xlsx)**                                         | Excel Spreadsheet Processing   | Create, edit, analyze, formulas, data visualization                    |
 | **[ceo-advisor](./skills/ceo-advisor)**                           | CEO Executive Leadership       | Strategy analyzer, financial modeling, board governance, investor relations |
 | **[cto-advisor](./skills/cto-advisor)**                           | CTO Technical Leadership       | Tech debt analyzer, team scaling, DORA metrics, ADR templates          |
@@ -33,7 +34,7 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[lixw-learn](./skills/lixw-learn)**                   | Concept Anatomist              | 8 exploration dimensions, dialectics, phenomenology, epiphany compression      |
 | **[lixw-relationship](./skills/lixw-relationship)**     | Relationship Analyst           | 5-layer structural diagnostics, psychoanalytic depth, transference patterns    |
 | **[lixw-roundtable](./skills/lixw-roundtable)**         | Roundtable Discussion          | Truth-seeking moderator, multi-perspective debate, dialectical framework       |
-| **[lixw-travel](./skills/lixw-travel)**                 | Travel Researcher              | Museum & architecture research, knowledge docs, portable reference cards       |
+| **[lixw-travel](./skills/lixw-travel)**                 | Travel Researcher              | Museum & architecture research, knowledge docs, reference cards       |
 | **[lixw-writes](./skills/lixw-writes)**                 | Writing Engine                 | Develop ideas through writing, structured thinking process                     |
 | **[lixw-card](./skills/lixw-card)**                     | Content Caster                 | 6 mold types (long card, infograph, comic, whiteboard, etc.), PNG output       |
 | **[lixw-paper-flow](./skills/lixw-paper-flow)**         | Paper Workflow                 | Read papers + cast cards in one go, batch arxiv/PDF processing                 |
@@ -48,6 +49,23 @@ Personal Claude Skills collection focused on enhancing AI-assisted development a
 | **[handoff](./skills/handoff)**                          | Conversation Handoff            | Compact the current conversation into a handoff document for another agent                   |
 
 ## Quick Start
+
+### Design · Claude Code + Codex
+
+Run from your project directory:
+
+```bash
+npx skills add https://github.com/lixw1994/ai-skills --skill design --agent claude-code codex --copy --yes
+```
+
+Use `/design` in Claude Code or `$design` in Codex. Create and revise pages in the same agent conversation. The optional preview helper requires Node.js 20+. [Preview usage](./skills/design/references/preview.md).
+
+To install through the Claude Code marketplace instead:
+
+```text
+/plugin marketplace add lixw1994/ai-skills
+/plugin install design@lixianwei-ai-skills
+```
 
 ### Claude Code
 

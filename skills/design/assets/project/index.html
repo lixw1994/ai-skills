@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Clarity · Interactive demo</title>
+    <script>
+      document.documentElement.dataset.dsTheme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    </script>
+    <link rel="stylesheet" data-design-system="tokens" href="design-system/tokens.css" />
+    <link rel="stylesheet" data-design-system="components" href="design-system/components.css" />
+    <link rel="stylesheet" href="chat.css" />
+    <script src="chat.js" defer></script>
+  </head>
+  <body>
+    <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="i-mark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5Z" /></symbol>
+      <symbol id="i-panel" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3" /><path d="M9 4v16" /></symbol>
+      <symbol id="i-write" viewBox="0 0 24 24"><path d="M12 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6M14 6l4-4 4 4-4 4-6 2Z" /></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 4 4" /></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6" /></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6" /></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2" /><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3" /></symbol>
+      <symbol id="i-retry" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5M6.1 6.1A8 8 0 0 1 20 12M4 12a8 8 0 0 0 13.9 5.9" /></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" /></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z" /><path d="M14 3v6h6M8 13h8m-8 4h5" /></symbol>
+      <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="m16 8-2.5 5.5L8 16l2.5-5.5Z" /></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5v16M3 4h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5v15h-5a4 4 0 0 0-4 2 4 4 0 0 0-4-2H3Z" /></symbol>
+    </svg>
+    <div class="chat-app" id="app">
+      <div class="sidebar-scrim" id="sidebar-scrim" hidden></div>
+      <aside class="sidebar" id="sidebar" aria-label="Conversations">
+        <div class="sidebar-brand">
+          <span class="brand-emblem"><svg class="icon" aria-hidden="true"><use href="#i-mark" /></svg></span>
+          <strong>Clarity</strong><span class="demo-badge">Demo</span>
+          <button class="icon-button drawer-close" id="close-sidebar" aria-label="Close conversations"><svg class="icon" aria-hidden="true"><use href="#i-close" /></svg></button>
+        </div>
+        <button class="new-chat-button" id="new-chat"><svg class="icon" aria-hidden="true"><use href="#i-write" /></svg><span>New chat</span><span class="new-chat-plus" aria-hidden="true">+</span></button>
+        <div class="chat-search">
+          <svg class="icon" aria-hidden="true"><use href="#i-search" /></svg>
+          <label class="visually-hidden" for="chat-search">Search conversations</label>
+          <input id="chat-search" type="search" placeholder="Search chats" autocomplete="off" />
+        </div>
+        <nav class="conversation-nav" aria-label="Recent conversations">
+          <p class="section-label">Your conversations</p>
+          <div id="conversation-list"></div>
+          <p class="search-empty" id="search-empty" hidden>No conversations found.</p>
+        </nav>
+        <div class="sidebar-footer">
+          <button class="appearance-button" id="appearance"><svg class="icon" aria-hidden="true"><use href="#i-sun" /></svg><span id="appearance-label">System appearance</span></button>
+          <div class="workspace"><span class="avatar" aria-hidden="true">Y</span><div><strong>Your workspace</strong><span>A place to think</span></div></div>
+        </div>
+      </aside>
+      <main class="main-panel" id="main-panel">
+        <div class="message-stage" id="message-stage">
+          <header class="chat-topbar">
+            <div class="topbar-leading">
+              <button class="icon-button" id="toggle-sidebar" aria-label="Toggle conversations" aria-controls="sidebar" aria-expanded="true"><svg class="icon" aria-hidden="true"><use href="#i-panel" /></svg></button>
+              <div class="product-title"><strong>Clarity</strong><span class="demo-badge">Demo</span></div>
+            </div>
+            <div class="topbar-trailing">
+              <label class="visually-hidden" for="response-style">Response style</label>
+              <select id="response-style"><option value="everyday">Everyday</option><option value="thoughtful">Think it through</option></select>
+              <button class="icon-button" id="header-new-chat" aria-label="Start a new chat"><svg class="icon" aria-hidden="true"><use href="#i-write" /></svg></button>
+            </div>
+          </header>
+          <div class="chat-column">
+            <section class="empty-state" id="empty-state" hidden aria-labelledby="welcome-title">
+              <div class="welcome-emblem"><svg class="icon" aria-hidden="true"><use href="#i-mark" /></svg></div>
+              <p class="eyebrow">A little space to think</p>
+              <h1 id="welcome-title">What’s on your mind?</h1>
+              <p class="welcome-copy">Start with a question. See where it takes you.</p>
+              <div class="suggestions">
+                <button class="suggestion" data-prompt="Help me plan a slower weekend with one simple plan each day."><svg class="icon" aria-hidden="true"><use href="#i-compass" /></svg><strong>Plan something</strong><span>Leave a little room for life</span></button>
+                <button class="suggestion" data-prompt="Help me write a clear, friendly note asking for feedback on an idea."><svg class="icon" aria-hidden="true"><use href="#i-write" /></svg><strong>Find the right words</strong><span>Say it simply, say it well</span></button>
+                <button class="suggestion" data-prompt="Help me turn a rough product idea into a small first step."><svg class="icon" aria-hidden="true"><use href="#i-mark" /></svg><strong>Think it through</strong><span>Make a little more sense of it</span></button>
+                <button class="suggestion" data-prompt="Explain how to learn a new subject without feeling overwhelmed."><svg class="icon" aria-hidden="true"><use href="#i-book" /></svg><strong>Learn something</strong><span>Follow your curiosity</span></button>
+              </div>
+            </section>
+            <section id="conversation" aria-labelledby="conversation-title">
+              <h1 class="conversation-title" id="conversation-title">A slower weekend</h1>
+              <div id="messages" role="log" aria-label="Conversation messages" aria-live="off"></div>
+            </section>
+          </div>
+        </div>
+        <footer class="composer-area">
+          <form class="composer" id="composer">
+            <div class="attachment-list" id="attachment-list" hidden></div>
+            <label class="visually-hidden" for="message-input">Message</label>
+            <textarea id="message-input" rows="1" maxlength="4000" placeholder="Ask anything" aria-describedby="demo-note"></textarea>
+            <div class="composer-tools">
+              <button class="icon-button" id="attach-file" type="button" aria-label="Attach a text file"><svg class="icon" aria-hidden="true"><use href="#i-plus" /></svg></button>
+              <input id="file-input" type="file" accept=".txt,.md,text/plain,text/markdown" multiple hidden />
+              <span class="input-hint">Shift + Enter for a new line</span>
+              <button class="send-button" id="send-message" type="submit" aria-label="Send message" disabled><svg class="icon" aria-hidden="true"><use href="#i-arrow" /></svg></button>
+            </div>
+          </form>
+          <p class="demo-note" id="demo-note">Interactive demo · replies are simulated.</p>
+        </footer>
+      </main>
+    </div>
+    <div class="toast" id="toast" hidden></div>
+    <p class="visually-hidden" id="announcer" role="status" aria-live="polite"></p>
+  </body>
+</html>

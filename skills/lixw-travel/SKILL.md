@@ -1,6 +1,6 @@
 ---
 name: lixw-travel
-description: "Deep travel research workflow for museums and ancient architecture. Input a city name, auto-generates structured knowledge document (Markdown) + portable reference cards (PNG). Covers historical background, museum highlights, archaeological significance, and architectural heritage. Use when user says '旅行研究', '博物馆功课', '古建功课', 'travel research', '出发前功课', or provides a city name with intent to do deep cultural travel preparation."
+description: "Deep travel research workflow for museums and ancient architecture. Input a city name, auto-generates structured knowledge document (Markdown) + reference cards (PNG). Covers historical background, museum highlights, archaeological significance, and architectural heritage. Use when user says '旅行研究', '博物馆功课', '古建功课', 'travel research', '出发前功课', or provides a city name with intent to do deep cultural travel preparation."
 ---
 
 # lixw-travel-flow: 旅行研究

@@ -1,6 +1,6 @@
 ---
 name: lixw-fomo
-description: "Tech trend research workflow — kill FOMO in 10 minutes. Input a tech topic (framework, model, event, debate), auto-generates structured knowledge note (Markdown) + portable summary card (PNG). Covers what it is, why it matters, community signal, and your action items. Use when user says 'FOMO', '这个是什么', '最近很火的', '研究一下', 'what is this hype about', or provides a tech topic/link with intent to quickly understand a trending technology."
+description: "Tech trend research workflow — kill FOMO in 10 minutes. Input a tech topic (framework, model, event, debate), auto-generates structured knowledge note (Markdown) + summary card (PNG). Covers what it is, why it matters, community signal, and your action items. Use when user says 'FOMO', '这个是什么', '最近很火的', '研究一下', 'what is this hype about', or provides a tech topic/link with intent to quickly understand a trending technology."
 ---
 
 # lixw-fomo: 技术资讯研究 — 杀死 FOMO

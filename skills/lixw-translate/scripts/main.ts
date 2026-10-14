@@ -21,7 +21,7 @@ function formatScriptCommand(fallback: string): string {
 
 function printUsage(exitCode: number): never {
   const cmd = formatScriptCommand("scripts/main.ts")
-  console.log(`Baoyu Translate CLI
+  console.log(`Lixw Translate CLI
 
 Usage:
   ${cmd} <file> [--max-words 5000] [--output-dir <dir>]

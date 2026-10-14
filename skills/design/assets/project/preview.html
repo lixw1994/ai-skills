@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Design · Preview</title>
+    <script>
+      let appearance = "system";
+      try { appearance = localStorage.getItem("design-preview.appearance") || appearance; } catch {}
+      document.documentElement.dataset.dsTheme = appearance === "dark" || (appearance === "system" && matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+    </script>
+    <link rel="stylesheet" href="preview/preview.css" />
+    <script defer src="preview/vendor/ios-shell.js"></script>
+    <script defer src="preview/vendor/chrome-shell.js"></script>
+    <script defer src="preview/vendor/dom.js"></script>
+    <script defer src="preview/vendor/macos-window.js"></script>
+    <script type="module" src="preview/preview.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar" id="toolbar">
+        <div class="project-heading">
+          <a class="brand" href="preview.html" aria-label="Design home">Design</a>
+          <div><strong id="project-title">Loading…</strong><span id="preview-label" role="status">Loading preview</span></div>
+        </div>
+        <div class="device-controls">
+          <div class="device-switch segmented" role="group" aria-label="Preview device">
+            <button data-device="iphone" aria-pressed="true">iPhone</button>
+            <button data-device="ipad" aria-pressed="false">iPad</button>
+            <button data-device="desktop" aria-pressed="false">Desktop</button>
+            <button data-device="browser" aria-pressed="false">Browser</button>
+            <button data-device="none" aria-pressed="false">No frame</button>
+          </div>
+          <div id="ipad-orientation" class="segmented orientation-switch" role="group" aria-label="iPad orientation" hidden>
+            <button data-orientation="portrait" aria-pressed="true"><svg aria-hidden="true" viewBox="0 0 20 20"><rect x="4" y="2" width="12" height="16" rx="2" /></svg>Portrait</button>
+            <button data-orientation="landscape" aria-pressed="false"><svg aria-hidden="true" viewBox="0 0 20 20"><rect x="2" y="4" width="16" height="12" rx="2" /></svg>Landscape</button>
+          </div>
+          <button id="rotate" class="icon-button" aria-label="Rotate iPhone" title="Rotate iPhone" hidden><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 7a6 6 0 1 1 0 7M4 3v4h4" /></svg></button>
+          <label id="page-choice" class="page-choice" hidden><span class="visually-hidden">Page</span><select id="page-select" aria-label="Preview page"></select></label>
+        </div>
+        <div class="top-actions">
+          <button id="compare" class="quiet-button" aria-pressed="false" title="Compare devices"><svg aria-hidden="true" viewBox="0 0 20 20"><rect x="2" y="4" width="6" height="12" rx="1" /><rect x="12" y="4" width="6" height="12" rx="1" /></svg><span>Compare</span></button>
+          <button id="refresh" class="icon-button" aria-label="Refresh" title="Refresh"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M16 7a6 6 0 1 0 0 7M16 3v4h-4" /></svg></button>
+          <button id="appearance" class="icon-button" aria-label="System appearance. Change appearance" title="System appearance. Change appearance"><svg aria-hidden="true" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3.5" /><path d="M10 1v2m0 14v2M1 10h2m14 0h2M3.5 3.5 5 5m10 10 1.5 1.5M3.5 16.5 5 15M15 5l1.5-1.5" /></svg></button>
+          <a id="system-link" class="icon-button" aria-label="Project design system" title="Project design system" href="design-system/preview.html" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 20 20"><rect x="3" y="3" width="5" height="5" rx="1" /><rect x="12" y="3" width="5" height="5" rx="1" /><rect x="3" y="12" width="5" height="5" rx="1" /><rect x="12" y="12" width="5" height="5" rx="1" /></svg></a>
+          <a id="open-page" class="icon-button" aria-label="Open page" title="Open page" href="#" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M11 3h6v6m0-6-8 8M8 4H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-3" /></svg></a>
+        </div>
+      </header>
+      <main class="viewer">
+        <section class="canvas" id="canvas" aria-label="Device preview canvas" tabindex="0">
+          <div id="surface" class="surface"><div id="stage" class="stage"></div></div>
+          <div id="load-error" class="load-error" role="alert" hidden></div>
+        </section>
+      </main>
+      <footer class="canvas-footer" id="canvas-footer">
+        <div id="zoom-controls" class="zoom-controls" role="group" aria-label="Canvas zoom">
+          <button id="zoom-out" class="icon-button" aria-label="Zoom out" title="Zoom out"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 10h12" /></svg></button>
+          <span id="zoom-label" aria-label="Zoom level">100%</span>
+          <button id="zoom-in" class="icon-button" aria-label="Zoom in" title="Zoom in"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 4v12M4 10h12" /></svg></button>
+          <span class="control-divider" aria-hidden="true"></span>
+          <button id="fit">Fit</button><button id="actual-size" aria-pressed="false">100%</button>
+        </div>
+        <span id="compare-hint" class="compare-hint" hidden>Select a device for a closer look.</span>
+      </footer>
+    </div>
+  </body>
+</html>

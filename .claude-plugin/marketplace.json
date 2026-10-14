@@ -274,6 +274,14 @@
       "source": "./skills/handoff",
       "strict": false,
       "skills": ["./SKILL.md"]
+    },
+    {
+      "name": "design",
+      "version": "1.0.0",
+      "description": "Interface design, design systems, and interactive device previews",
+      "source": "./skills/design",
+      "strict": false,
+      "skills": ["."]
     }
   ]
 }
